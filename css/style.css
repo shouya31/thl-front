@@ -1,0 +1,602 @@
+/* COMMON */
+/* ============================================ */
+* {
+  font-family: "Noto Sans JP", sans-serif;
+  color: rgb(34, 34, 34);
+}
+a:hover {
+  color: #10cc00;
+  transition: ease-in-out 0.2s;
+}
+.container {
+  max-width: 960px;
+  margin: 0px auto;
+}
+.fl-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.fl-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.fl-end {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.fl-space-between {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.grid {
+  display: grid;
+}
+
+/* SECTIONS */
+/* ============================================ */
+
+/* FIRSTVIEW */
+.firstview__wrapper {
+  background-color: rgb(221, 228, 232);
+  overflow: hidden;
+}
+.first-view {
+  width: 100%;
+  max-width: 1280px;
+  height: 100vh;
+  max-height: 680px;
+  margin: 0px auto;
+  background-image: url("../images/firstview.png");
+  background-position: center center;
+}
+.catchcopy {
+  padding: 254px 0px 235px 130px;
+}
+.catchcopy__sm {
+  font-family: "Noto Sans JP";
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-top: 22px;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+.catchcopy__md {
+  position: relative;
+  font-family: "Noto Sans JP";
+  font-weight: 300;
+  font-size: 2.8rem;
+  letter-spacing: 0.2em;
+}
+.catchcopy__lg {
+  font-family: Barlow;
+  font-size: 10rem;
+  font-weight: 100;
+  margin-top: 21px;
+  z-index: 100;
+}
+.first-view-angle {
+  display: block;
+  width: 3600px;
+  height: 900px;
+  position: absolute;
+  mix-blend-mode: multiply;
+  background-image: url("../images/first-view-angle.png");
+}
+
+/* NOTICE */
+.notice {
+  padding: 80px 0px 40px;
+}
+.notice-list__wrapper {
+  position: relative;
+}
+.notice-list {
+  border-bottom: 1px solid rgb(221, 228, 232);
+  padding: 0px 10px;
+}
+.notice-list__item {
+  letter-spacing: 0.1em;
+  padding-bottom: 20px;
+}
+.notice-list__item + .notice-list__item {
+  border-top: 1px solid rgb(221, 228, 232);
+  padding: 20px 0px;
+}
+.notice-list__time {
+  font-family: Barlow;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.notice-list__tag {
+  width: 80px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(16, 204, 0);
+  border: 1px solid rgb(16, 204, 0);
+  border-radius: 10px;
+  padding: 5px 0px;
+  margin-left: 40px;
+}
+.notice-list__text {
+  font-size: 1.3rem;
+  width: 502px;
+  margin-left: 20px;
+  line-height: 1.7;
+}
+.notice-all-list {
+  position: absolute;
+  bottom: -24px;
+  right: 0px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: rgb(16, 204, 0);
+}
+
+/* INFO */
+.info {
+  padding: 40px 0px 150px;
+}
+.info-list {
+}
+.info-list-item {
+  width: 294px;
+}
+.info-list-item__block {
+}
+.info-list-item__card {
+  letter-spacing: 0.1em;
+  display: block;
+}
+.info-list-item__img {
+}
+.info-list-item__title {
+  font-size: 2.2rem;
+  margin-top: 27px;
+}
+.info-list-item__title--sub {
+  font-family: Barlow;
+  font-size: 1.2rem;
+  font-weight: 600;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.info-list-item__text {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+/* VISION */
+.vision {
+  position: relative;
+  background-color: rgb(245, 247, 248);
+  letter-spacing: 0.1em;
+  padding: 88px 0px 0;
+  z-index: 1;
+}
+.vision__bg-wrapper {
+  overflow-x: clip;
+}
+.vision__bg {
+  position: absolute;
+  width: 1480px;
+  height: 640px;
+  background-image: url("../images/bg_vision.png");
+  background-repeat: no-repeat;
+  top: -144px;
+  left: 220px;
+  z-index: -1;
+}
+.vision__inner {
+  position: relative;
+  z-index: 100;
+}
+.vision__bg::after {
+  position: absolute;
+  background-image: url("../images/bg_vision.png");
+  background-repeat: no-repeat;
+  background-size: 1280px;
+  background-position: right -300px top -143px;
+}
+.vision__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.vision__catch {
+  font-size: 4rem;
+  margin-top: 24px;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+}
+.vision__message-box {
+  margin-top: 32px;
+}
+.vision__message {
+  font-size: 1.5rem;
+}
+.vision__message + .vision__message {
+  margin-top: 12px;
+}
+.vision__about-link {
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(34, 34, 34);
+  margin-top: 64px;
+  padding: 22px 166px 22px 30px;
+}
+.vision__about-link::after {
+  content: url("../images/arrow.svg");
+  position: absolute;
+  right: 20px;
+}
+
+/* COMPANY */
+.company {
+  padding: 220px 0 120px;
+  background-color: #f4f7f8;
+  letter-spacing: 0.1em;
+}
+.company__inner {
+  width: 1080px;
+  margin: 0 auto;
+}
+.company__heading {
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.company__heading-en {
+  font-family: "Barlow";
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15px;
+}
+.company__list {
+  margin-top: 40px;
+}
+.company__list-item {
+  width: 530px;
+  margin-bottom: 20px;
+}
+.company__card {
+}
+.company__card-link {
+}
+.company__card-img {
+}
+.company__card-body {
+  background-color: #fff;
+  padding: 40px;
+}
+.company__card-text {
+  position: relative;
+}
+.company__card-text::after {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-image: url(../images/icon_group-company-arrow.svg);
+  background-color: #10cc00;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0;
+}
+.company__card-company-name {
+  font-size: 1.8rem;
+}
+.company__card-company-about {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* COMNTACT */
+.contact {
+  padding: 88px 0 80px;
+}
+.contact__heading {
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.contact__inner {
+  width: 660px;
+  margin: 0 auto;
+}
+.contact__list {
+  margin-top: 44px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.contact__list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  text-align: center;
+  background-color: #222;
+  padding: 18px 58px;
+}
+.contact__card {
+}
+.contact__catd-link {
+  letter-spacing: 0.1em;
+}
+.contact__card-device {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.1em;
+}
+.contact__card-info {
+  font-family: "Barlow";
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 13px;
+  letter-spacing: 0.1em;
+}
+.contact__card-info--tel {
+  position: relative;
+  padding-left: 26px;
+}
+.contact__card-info--tel::before {
+  position: absolute;
+  content: url(../images/icon_tel.svg);
+  width: 24px;
+  height: 24px;
+  display: block;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.contact__card-subinfo {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 4px;
+  letter-spacing: 0.1em;
+}
+.contact__card-info--mail {
+  position: relative;
+  padding-left: 28px;
+  font-size: 1.8rem;
+}
+.contact__card-info--mail::before {
+  position: absolute;
+  content: url(../images/icon_mail.svg);
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* PARTS */
+/* ============================================ */
+
+/* header */
+.header {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+.header.js-scroll {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: #fff;
+  box-shadow: 4px 4px 12px 0px rgb(17 68 136 / 12%);
+}
+.header__body {
+  width: 1120px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 40px;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 4px 4px 12px 0px rgb(17 68 136 / 12%);
+}
+.header.js-scroll .header__body {
+  border-radius: 0;
+  box-shadow: none;
+}
+.header__company-name {
+  padding-left: 40px;
+}
+.header.js-scroll .header__company-name {
+  padding: 7px 0;
+}
+.header__company-subname {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+}
+.header__company-mainname {
+  font-family: "Barlow";
+  font-size: 3.2rem;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  margin-top: 8px;
+}
+.header__global-nav {
+}
+.header__global-nav-list {
+}
+.header__global-nav-list-item {
+}
+.header__global-nav-list-item + .header__global-nav-list-item {
+  margin-left: 30px;
+}
+.header__global-nav-list-item + .header__global-nav-list-item.header__global-nav-list-item--last {
+}
+.header__global-nav-link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.header__global-nav-list-item
+  + .header__global-nav-list-item.header__global-nav-list-item--last
+  .header__global-nav-link {
+  display: block;
+  color: #fff;
+  background-color: #222;
+  padding: 42px 35px;
+}
+.header.js-scroll
+  .header__global-nav-list-item
+  + .header__global-nav-list-item.header__global-nav-list-item--last
+  .header__global-nav-link {
+  padding: 13px 24px;
+  border-radius: 20px;
+}
+/* FOOTER */
+.footer {
+  letter-spacing: 0.1em;
+  position: relative;
+}
+.footer-catch {
+  height: 1000px;
+  overflow: hidden;
+}
+.footer-catch__inner {
+  width: 1080px;
+  margin: 0 auto;
+}
+.fotter-catch__block {
+}
+.footer-catch__text {
+  font-family: "Barlow";
+  font-size: 10rem;
+  font-weight: 100;
+}
+.footer-catch__angle-wrapper {
+  position: relative;
+}
+.footer-catch__angle {
+  position: absolute;
+  display: block;
+  mix-blend-mode: multiply;
+  transform: translateY(-20px);
+}
+.footer-catch__angle.footer-catch__angle01 {
+  background-image: url(../images/footer-catch_angle01.png);
+  width: 3640px;
+  height: 2114px;
+  left: 8px;
+}
+.footer-catch__angle.footer-catch__angle02 {
+  background-image: url(../images/footer-catch_angle02.png);
+  width: 4580px;
+  height: 1340px;
+  left: -930px;
+}
+.footer__inner {
+  width: 1080px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 11%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.footer__company-name {
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.footer__company-info-wrapper {
+  margin-top: 45px;
+  align-items: flex-start;
+}
+.footer__info-list {
+  grid-template-columns: repeat(4, max-content);
+  grid-template-rows: repeat(2, max-content);
+  column-gap: 60px;
+  row-gap: 30px;
+}
+.footer__info-list-item {
+}
+.footer__info-list-item + .footer__info-list-item {
+}
+.footer__info-list-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.footer__contact-wrapper {
+}
+.footer__contact-block {
+}
+.footer__contact-block + .footer__contact-block {
+  margin-top: 26px;
+}
+.footer__contact-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.footer__contact-info {
+  position: relative;
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 500;
+}
+.footer__contact-info--tel {
+  font-family: "Barlow";
+  font-size: 2.4rem;
+  letter-spacing: 0.05em;
+  padding-left: 26px;
+}
+.footer__contact-info--tel::before {
+  position: absolute;
+  content: url(../images/icon_footer-tel.svg);
+  width: 24px;
+  height: 24px;
+  display: block;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.footer__contact-info--mail {
+  font-size: 1.8rem;
+  padding-left: 28px;
+}
+.footer__contact-info--mail::before {
+  position: absolute;
+  content: url(../images/icon_footer-mail.svg);
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.footer__company-address-block {
+  margin-top: 36px;
+}
+.footer__company-address {
+  font-size: 1.2rem;
+}
+.footer__company-address + .footer__company-address {
+  margin-top: 8px;
+}
+.footer__copyright {
+  font-family: "Barlow";
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 25px;
+}
