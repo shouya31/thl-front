@@ -37,7 +37,7 @@ a:hover {
   display: grid;
 }
 
-/* SECTIONS */
+/* index.html */
 /* ============================================ */
 
 /* FIRSTVIEW */
@@ -308,6 +308,9 @@ a:hover {
 .contact {
   padding: 88px 0 80px;
 }
+.contact.bg-gray {
+  background-color: #f5f7f8;
+}
 .contact__heading {
   font-size: 2.2rem;
   font-weight: 500;
@@ -387,10 +390,163 @@ a:hover {
   transform: translateY(-50%);
 }
 
+/* case-list.html */
+/* ============================================ */
+
+/* PAGE-INFO-BLOCK */
+.page-info-block {
+}
+.breadcrumb-list__wrapper {
+}
+.breadcrumb-list {
+  letter-spacing: 0.1em;
+  flex-wrap: wrap;
+}
+.breadcrumb-list__item {
+}
+.breadcrumb-list__item::after {
+  content: "〉";
+}
+.breadcrumb-list__item:last-child {
+  font-size: 2.8rem;
+  flex-basis: 100%;
+  margin-top: 18px;
+}
+.breadcrumb-list__item:last-child::after {
+  content: "";
+}
+.breadcrumb-list__item + .breadcrumb-list__item {
+}
+
+.breadcrumb-list__link {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.page-title {
+  font-family: "Barlow";
+  font-size: 6.6rem;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+}
+
+/* CASES */
+.cases {
+  padding: 85px 0 120px;
+}
+.cases__form {
+}
+.cases__filter-wrapper {
+  position: relative;
+}
+.cases__filter-wrapper::after {
+  content: url(../images/icon_filter-arrow.svg);
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-48%);
+}
+.cases__filter-wrapper + .cases__filter-wrapper {
+  margin-left: 20px;
+}
+.cases__filter {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 12px 21px;
+  border: 1px solid #222;
+  border-radius: 30px;
+  width: 150px;
+}
+.cases__option {
+}
+.cases-list {
+  grid-template-columns: repeat(2, 470px);
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-top: 40px;
+}
+.cases-list__item {
+  position: relative;
+  border: 1px solid #dde4e8;
+}
+.cases-list__block {
+}
+.cases-list__link {
+  align-items: center;
+  padding: 20px;
+}
+.cases-list__img {
+}
+.cases-list__body {
+  margin-left: 20px;
+}
+.cases-list__body::after {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-image: url(../images/icon_group-company-arrow.svg);
+  background-color: #10cc00;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 20px;
+  right: 20px;
+}
+.cases-list__number {
+  font-family: "Barlow";
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #10cc00;
+}
+.cases-list__name {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-top: 10px;
+}
+.cases-list__text-small {
+  font-size: 1.3rem;
+}
+.cases-list__place {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-top: 17px;
+}
+.cases-list__type {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-top: 8px;
+}
+
 /* PARTS */
 /* ============================================ */
 
-/* header */
+/* body */
+body {
+  position: relative;
+  overflow-x: clip;
+}
+.top-angle__wrapper {
+  overflow: hidden;
+}
+.top-angle {
+  display: block;
+  width: 3600px;
+  height: 900px;
+  position: absolute;
+  mix-blend-mode: multiply;
+  background-image: url(../images/first-view-angle.png);
+  left: -80px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* HEADER */
 .header {
   position: absolute;
   top: 20px;
@@ -467,6 +623,14 @@ a:hover {
   padding: 13px 24px;
   border-radius: 20px;
 }
+
+/* MAIN */
+.main {
+}
+.main.main--under-layer {
+  padding-top: 200px;
+}
+
 /* FOOTER */
 .footer {
   letter-spacing: 0.1em;
@@ -475,6 +639,12 @@ a:hover {
 .footer-catch {
   height: 1000px;
   overflow: hidden;
+}
+.footer__bg {
+  background-image: url(../images/bg_footer.png);
+  height: 360px;
+  background-position-x: center;
+  background-color: #f5f7f8;
 }
 .footer-catch__inner {
   width: 1080px;
@@ -515,6 +685,11 @@ a:hover {
   bottom: 11%;
   left: 50%;
   transform: translateX(-50%);
+}
+.footer__inner.footer__inner--under-layer {
+  position: static;
+  transform: translateX(0%);
+  padding: 67px 0 60px;
 }
 .footer__company-name {
   font-size: 2.2rem;
