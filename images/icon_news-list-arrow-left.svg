@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="SVGID" d="M91.216,134.285h-24v24h24Z" transform="translate(-67.216 -134.285)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="navi-r" clip-path="url(#clip-path)">
+    <path id="パス_28" data-name="パス 28" d="M81.806,140.285l1.41,1.41-4.58,4.59,4.58,4.59-1.41,1.41-6-6Z" transform="translate(-67.806 -134.285)"/>
+  </g>
+</svg>
