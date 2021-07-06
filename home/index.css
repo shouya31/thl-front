@@ -519,7 +519,7 @@ a:hover {
   margin-top: 8px;
 }
 
-/* NEWs */
+/* NEWS */
 .news {
   padding: 86px 0 126px;
 }
@@ -663,6 +663,113 @@ a:hover {
   font-size: 1.2rem;
   font-weight: 500;
   color: #222;
+}
+
+/* PRODUCTS-LIST */
+.products {
+  padding: 80px 0 120px;
+}
+.products__category-block {
+}
+.products__category-block + .products__category-block {
+  margin-top: 120px;
+  padding-top: 130px;
+  border-top: 1px solid #dde4e8;
+}
+.products__category-name {
+  font-size: 3.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.products__category-desc {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+  margin-top: 27px;
+}
+.products__list-wrapper {
+  margin-top: 40px;
+}
+.products__list-subcategory {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid #222;
+  padding-bottom: 6px;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+.products__list {
+  grid-template-columns: repeat(2, 450px);
+  column-gap: 60px;
+  row-gap: 60px;
+  margin-bottom: 124px;
+}
+.products__list:last-of-type {
+  margin-bottom: 0px;
+}
+.products__list-item {
+}
+.products__card {
+}
+.products__card-img-wrapper {
+  position: relative;
+  background: linear-gradient(to bottom, #f2f3f9 0%, #fafafc 100%);
+}
+.products__card-link {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-image: url(../images/icon_group-company-arrow.svg);
+  background-color: #10cc00;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 12px;
+  right: 12px;
+}
+.products__card-img {
+}
+.products__card-body {
+  letter-spacing: 0.1em;
+  margin-top: 26px;
+}
+.products__card-name {
+  font-size: 1.5rem;
+}
+.products__card-name--lg {
+  font-family: "Barlow";
+  font-size: 2.6rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  margin-right: 4px;
+}
+.products__card-desc {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-top: 18px;
+}
+.products__card-pdf-textbox {
+  align-items: center;
+  margin-top: 22px;
+}
+.products__card-pdf-tag {
+  font-family: "Barlow";
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #fff;
+  background-color: #222;
+  padding: 4px 8px;
+}
+.products__card-pdf-text {
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  margin-left: 10px;
+}
+.products__card-pdf-link {
+  font-size: 1.2rem;
+  text-decoration: underline;
 }
 
 /* PARTS */
