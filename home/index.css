@@ -450,7 +450,6 @@ a:hover {
 }
 .cases__filter {
   font-size: 1.3rem;
-  font-weight: 500;
   padding: 12px 21px;
   border: 1px solid #222;
   border-radius: 30px;
@@ -503,7 +502,6 @@ a:hover {
 }
 .cases-list__name {
   font-size: 1.8rem;
-  font-weight: 500;
   letter-spacing: 0.1em;
   margin-top: 10px;
 }
@@ -512,13 +510,11 @@ a:hover {
 }
 .cases-list__place {
   font-size: 1.2rem;
-  font-weight: 500;
   letter-spacing: 0.1em;
   margin-top: 17px;
 }
 .cases-list__type {
   font-size: 1.2rem;
-  font-weight: 500;
   letter-spacing: 0.1em;
   margin-top: 8px;
 }
