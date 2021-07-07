@@ -1006,6 +1006,9 @@ body {
   background-position-x: center;
   background-color: #f5f7f8;
 }
+.footer__bg.footer__bg--white {
+  background-color: #fff;
+}
 .footer-catch__inner {
   width: 1080px;
   margin: 0 auto;
