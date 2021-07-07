@@ -236,6 +236,26 @@ a:hover {
 /* PARTS */
 /* ============================================ */
 
+/* body */
+body {
+  position: relative;
+  overflow-x: clip;
+}
+.top-angle__wrapper {
+  overflow: hidden;
+}
+.top-angle {
+  display: block;
+  width: 3600px;
+  height: 900px;
+  position: absolute;
+  mix-blend-mode: multiply;
+  background-image: url(../images/first-view-angle.png);
+  left: -80px;
+  z-index: -1;
+  overflow: hidden;
+}
+
 /* header */
 .header {
   position: absolute;
