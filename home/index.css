@@ -772,6 +772,117 @@ a:hover {
   text-decoration: underline;
 }
 
+/* company.html */
+.company__greeting {
+  padding: 80px 0 86px;
+}
+.company__container {
+  grid-template-columns: 200px auto;
+}
+.company__section-title-wrapper {
+}
+.company__section-title {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+  display: inline-block;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #222;
+}
+.company__text {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+}
+.company__text + .company__text {
+  margin-top: 30px;
+}
+.company__text.company__text--accent {
+  color: #10cc00;
+}
+.company__vision {
+  background-color: #f5f7f8;
+  padding: 80px 0 86px;
+}
+.company__vision-body {
+  align-items: flex-start;
+}
+.company__vision-textbox {
+  width: 440px;
+}
+.company__vision-img {
+}
+.company__info {
+  padding: 80px 0;
+}
+.company__info-table-wrapper {
+  border-bottom: 1px solid #dde4e8;
+}
+.company__info-table {
+  letter-spacing: 0.1em;
+  align-items: inherit;
+}
+.company__info-table-title {
+  font-size: 1.2rem;
+  width: 200px;
+  padding: 14px 0 14px 20px;
+  background-color: #f5f7f8;
+  border-top: 1px solid #dde4e8;
+}
+.company__info-table-content {
+  font-size: 1.2rem;
+  padding: 14px 0 14px 20px;
+  border-top: 1px solid #dde4e8;
+  margin-left: 10px;
+  width: 100%;
+}
+.company__info-table-text {
+}
+.company__info-table-text + .company__info-table-text {
+  margin-top: 8px;
+}
+.company__info-table-text.company__info-table-text--icon::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #10cc00;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.company__info-map-block {
+  margin-top: 44px;
+}
+.company__info-map-name {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+}
+.company__info-map {
+  margin-top: 23px;
+}
+.company__history {
+  background-color: #f5f7f8;
+  padding: 80px 0 86px;
+}
+.company__history-body {
+  grid-template-columns: max-content auto;
+  column-gap: 40px;
+  row-gap: 15px;
+}
+.company__history-text-block {
+}
+.company__history-text-block + .company__history-text-block {
+  margin-top: 10px;
+}
+.company__history-textbox {
+}
+.company__history-text {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+}
+.company__history-text + .company__history-text {
+  margin-top: 10px;
+}
+
 /* PARTS */
 /* ============================================ */
 
