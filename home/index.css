@@ -951,6 +951,92 @@ a:hover {
   border: 1px solid #222;
 }
 
+/* prowork.html */
+.firstview__wrapper.firstview__wrapper--prowork {
+  overflow: unset;
+}
+.first-view.first-view--prowork {
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  max-height: 680px;
+  margin: 0px auto;
+  background-image: url("../images/prowork_firstview.png");
+  background-position: center center;
+  position: relative;
+}
+.prowork__catchcopy-wrapper {
+  position: absolute;
+  max-width: 50%;
+  background-color: #fff;
+  padding: 60px 128px 54px 170px;
+  border-radius: 0 120px 120px 0;
+  bottom: -108px;
+}
+.prowork__catchcopy {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+}
+.prowork__catchcopy-sub {
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+.prowork-service {
+  background-color: #f5f7f8;
+  padding-top: 190px;
+}
+.prowork-service__block {
+  position: relative;
+}
+.prowork-service__textbox {
+  max-width: 400px;
+  padding-bottom: 90px;
+}
+.prowork-service__title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.prowork-service__desc {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+.prowork-service__img {
+  position: absolute;
+  top: -45px;
+  right: 0;
+}
+.prowork-company-info {
+  padding: 187px 0 120px;
+}
+.prowork-company-info__container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.prowork-company-info__section-heading {
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.prowork-company-info__section-heading-en {
+  font-family: "Barlow";
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-top: 15px;
+}
+.company__info-body--prowork {
+  margin-top: 40px;
+}
+
 /* PARTS */
 /* ============================================ */
 
