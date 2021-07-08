@@ -790,6 +790,7 @@ a:hover {
   display: inline-block;
   padding-bottom: 7px;
   border-bottom: 1px solid #222;
+  font-weight: 500;
 }
 .company__text {
   font-size: 1.5rem;
@@ -830,6 +831,10 @@ a:hover {
   padding: 14px 0 14px 20px;
   background-color: #f5f7f8;
   border-top: 1px solid #dde4e8;
+  font-weight: 500;
+}
+.company__info-table-text{
+  font-weight: 500;
 }
 .company__info-table-content {
   font-size: 1.2rem;
@@ -857,6 +862,7 @@ a:hover {
 .company__info-map-name {
   font-size: 1.5rem;
   letter-spacing: 0.1em;
+  font-weight: 500;
 }
 .company__info-map {
   margin-top: 23px;
