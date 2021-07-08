@@ -354,7 +354,8 @@ margin: auto;
 /* body */
 body {
   position: relative;
-  overflow-x: clip;
+  /* overflow-x: clip; */
+  overflow-x: hidden;
 }
 .top-angle__wrapper {
   overflow: hidden;
