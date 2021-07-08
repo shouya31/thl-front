@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="SVGID" d="M139.738,110.125h36v36h-36Z" fill="#10cc00"/>
+    </clipPath>
+  </defs>
+  <g id="arrow" transform="translate(-139.738 -110.125)">
+    <g id="グループ_53" data-name="グループ 53" clip-path="url(#clip-path)">
+      <path id="パス_34" data-name="パス 34" d="M151.738,117.625v21l16.5-10.5Z" fill="#10cc00"/>
+    </g>
+  </g>
+</svg>

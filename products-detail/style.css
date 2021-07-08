@@ -1,0 +1,653 @@
+/* COMMON */
+/* ============================================ */
+* {
+  font-family: "Noto Sans JP", sans-serif;
+  color: rgb(34, 34, 34);
+}
+a:hover {
+  color: #10cc00;
+  transition: ease-in-out 0.2s;
+}
+.container {
+  max-width: 960px;
+  margin: 0px auto 4rem;
+}
+.fl-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.fl-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.fl-end {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.fl-space-between {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.grid {
+  display: grid;
+}
+
+/* SECTIONS */
+/* ============================================ */
+
+
+.products-detail {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.products-detail___content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+.products-detail___text-wrapper {
+  width: 350px;
+}
+.products-detail___product-code {
+  font-family: "Barlow";
+  font-size: 4.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+.products-detail___product-type {
+  font-size: 1.8rem;
+  font-weight: 100;
+  letter-spacing: 1.8px;
+  margin-bottom: 4rem;
+  line-height: 1.6;
+}
+.products-detail___product-explain {
+  font-family: "Noto sans JP";
+  font-size: 1.5rem;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+  margin-bottom: 4rem;
+  line-height: 1.8;
+}
+.products-detail___product-link {
+  display: flex;
+  justify-content: space-between;
+}
+.product-link__store {
+  width: 170px;
+  display: inline-block;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(34, 34, 34);
+  border: solid 1px #222;
+  text-align: center;
+  padding: 18px;
+  margin-bottom: 2rem;
+  transition: .3s;
+  }
+.product-link__store:hover{
+  color: #10cc00;
+  background-color: #fff;
+  border: solid 1px #10cc00;
+}
+.product-link__contact {
+  width: 170px;
+  display: inline-block;
+  font-size: 1.5rem;
+  color: rgb(34, 34, 34);
+  background-color: #fff;
+  border: solid 1px #222;
+  text-align: center;
+  padding: 18px;
+  margin-bottom: 2rem;
+  transition: .3s;
+}
+.product-link__contact:hover {
+  color: #fff;
+  background-color: #10cc00;
+  border: solid 1px #10cc00;
+}
+.products-detail___product-catalog　{
+  font-size: 1.2rem;
+}
+.products-detail___product-catalog a {
+  text-decoration: underline;
+}
+.products-detail___product-catalog span {
+  display: inline-block;
+  font-size: 1rem;
+  font-family: "Barlow";
+  color: #fff;
+  background-color: #222;
+  padding: 4px 8px;
+  margin-right: 1rem;
+}
+.products-detail___image-wrapper {
+  max-width: 570px;
+  text-align: right;
+}
+.products-detail___image-wrapper .products-mark {
+  margin-top: 20px;
+}
+.products-detail___spec {
+  margin-bottom: 80px;
+}
+.products-detail___spec__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.products-detail___spec-title {
+  display: inline-block;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  position: relative;
+  text-align-last: justify;
+  min-width: 48px;
+  height: fit-content;
+  position: relative;
+}
+.products-detail___spec-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  border-bottom: 1px solid #222;
+}
+.products-detail___spec-info {
+  display: flex;
+  width: 760px;
+  margin-bottom: 80px;
+  font-size: 1.2rem;
+  letter-spacing: .05em;
+  line-height: 1.6;
+}
+.spec-info__item {
+  display: inline-block;
+  background-color: fff;
+  box-shadow: 3px 3px 12px #1144881F;
+  border-radius: 24px;
+  padding: 13px 0 13px 60px;
+  text-align: left;
+  font-size: 1.5rem;
+  letter-spacing: .1em;
+  min-width: 175px;
+  margin-right: 20px;
+  position: relative;
+}
+.spec-info__item::after {
+  content: "";
+  background-image: url(./images/label_check.svg);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+.spec-info__table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  letter-spacing: .1em;
+}
+.spec-info__table dt,.spec-info__table dd {
+  line-height: 4rem;
+  padding-left: 2rem;
+}
+.spec-info__table dt {
+  width: 28%;
+  background-color: #F5F7F8;
+  border-top: solid 1px #DDE4E8;
+}
+.spec-info__table dd {
+  width: 70%;
+  border-top: solid 1px #DDE4E8;
+}
+.spec-info__table dt.products-detail___image-wrapper, .spec-info__table dd:last-of-type {
+  border-bottom:  solid 1px #DDE4E8;
+}
+.spec-info__caption {
+  line-height: 20px;
+  font-size: 1.2rem;
+}
+.spec-info__product-document {
+  margin-top: 10px;
+}
+.spec-info__product-document span {
+  display: inline-block;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #222;
+  padding: 4px 8px;
+  margin-right: 1rem;
+}
+.spec-info__product-document a {
+  text-decoration: underline;
+}
+.products-detail___spec__image-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.products-detail___spec__image-wrapper img {
+  width: 280px;
+}
+.products-detail___spec__image-wrapper p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+}
+/* PARTS */
+/* ============================================ */
+
+/* body */
+body {
+  position: relative;
+  overflow-x: clip;
+}
+.top-angle__wrapper {
+  overflow: hidden;
+}
+.top-angle {
+  display: block;
+  width: 3600px;
+  height: 900px;
+  position: absolute;
+  mix-blend-mode: multiply;
+  background-image: url(../images/first-view-angle.png);
+  left: -80px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* header */
+.header {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+.header.js-scroll {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: #fff;
+  box-shadow: 4px 4px 12px 0px rgb(17 68 136 / 12%);
+}
+.header__body {
+  width: 1120px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 40px;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 4px 4px 12px 0px rgb(17 68 136 / 12%);
+}
+.header.js-scroll .header__body {
+  border-radius: 0;
+  box-shadow: none;
+}
+.header__company-name {
+  padding-left: 40px;
+}
+.header.js-scroll .header__company-name {
+  padding: 7px 0;
+}
+.header__company-subname {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+}
+.header__company-mainname {
+  font-family: "Barlow";
+  font-size: 3.2rem;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  margin-top: 8px;
+}
+.header__global-nav {
+}
+.header__global-nav-list {
+}
+.header__global-nav-list-item {
+}
+.header__global-nav-list-item + .header__global-nav-list-item {
+  margin-left: 30px;
+}
+.header__global-nav-list-item + .header__global-nav-list-item.header__global-nav-list-item--last {
+}
+.header__global-nav-link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.header__global-nav-list-item
+  + .header__global-nav-list-item.header__global-nav-list-item--last
+  .header__global-nav-link {
+  display: block;
+  color: #fff;
+  background-color: #222;
+  padding: 42px 35px;
+}
+.header.js-scroll
+  .header__global-nav-list-item
+  + .header__global-nav-list-item.header__global-nav-list-item--last
+  .header__global-nav-link {
+  padding: 13px 24px;
+  border-radius: 20px;
+}
+
+/* MAIN */
+.main {
+
+}
+.main.main--under-layer {
+  padding-top: 200px;
+}
+
+
+/* PAGE-INFO-BLOCK */
+.page-info-block {
+  text-align: center;
+}
+.breadcrumb-list__wrapper {
+}
+.breadcrumb-list {
+  letter-spacing: 0.1em;
+  flex-wrap: wrap;
+}
+.breadcrumb-list__item {
+}
+.breadcrumb-list__item::after {
+  content: "〉";
+}
+.breadcrumb-list__item:last-child {
+}
+.breadcrumb-list__item:last-child::after {
+  content: "";
+}
+.breadcrumb-list__item + .breadcrumb-list__item {
+}
+
+.breadcrumb-list__link {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.products-detail__page-title {
+  font-size: 2.8rem;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+  margin-top: 20px;
+}
+.page-title__wrapper {
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+}
+.page-title {
+  font-family: "Barlow";
+  font-size: 6.6rem;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+}
+.page-subtitle {
+  font-family: "Barlow";
+  font-size: 2.4rem;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+  padding-right: .5rem;
+}
+.previous-page {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  width: 150px;
+  border-radius: 18px;
+  padding: 10px 0 10px 40px;
+  background-color: #10cc00;
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: .1em;
+  position: relative;
+  transition: .3s;
+}
+.previous-page:hover {
+  background-color: rgba(17, 204, 0, 0.7);
+  color: #fff;
+}
+.previous-page::before {
+  content: "";
+  background-image: url(./images/arrow-s.svg);
+  width: 18px;
+  height: 8px;
+  position: absolute;
+  left: 24px;
+  top: 12px;
+}
+
+
+/* CONTACT */
+.contact {
+  padding: 88px 0 80px;
+}
+.contact__heading {
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.contact__inner {
+  width: 660px;
+  margin: 0 auto;
+}
+.contact__list {
+  margin-top: 44px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.contact__list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  text-align: center;
+  background-color: #222;
+  padding: 18px 58px;
+}
+.contact__card {
+}
+.contact__catd-link {
+  letter-spacing: 0.1em;
+}
+.contact__card-device {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.1em;
+}
+.contact__card-info {
+  font-family: "Barlow";
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 13px;
+  letter-spacing: 0.1em;
+}
+.contact__card-info--tel {
+  position: relative;
+  padding-left: 26px;
+}
+.contact__card-info--tel::before {
+  position: absolute;
+  content: url(../images/icon_tel.svg);
+  width: 24px;
+  height: 24px;
+  display: block;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.contact__card-subinfo {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 4px;
+  letter-spacing: 0.1em;
+}
+.contact__card-info--mail {
+  position: relative;
+  padding-left: 28px;
+  font-size: 1.8rem;
+}
+.contact__card-info--mail::before {
+  position: absolute;
+  content: url(../images/icon_mail.svg);
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* FOOTER */
+.footer {
+  letter-spacing: 0.1em;
+  position: relative;
+}
+.footer-catch {
+  height: 1000px;
+  overflow: hidden;
+}
+.footer-catch__inner {
+  width: 1080px;
+  margin: 0 auto;
+}
+.fotter-catch__block {
+}
+.footer-catch__text {
+  font-family: "Barlow";
+  font-size: 10rem;
+  font-weight: 100;
+}
+.footer-catch__angle-wrapper {
+  position: relative;
+}
+.footer-catch__angle {
+  position: absolute;
+  display: block;
+  mix-blend-mode: multiply;
+  transform: translateY(-20px);
+}
+.footer-catch__angle.footer-catch__angle01 {
+  background-image: url(../images/footer-catch_angle01.png);
+  width: 3640px;
+  height: 2114px;
+  left: 8px;
+}
+.footer-catch__angle.footer-catch__angle02 {
+  background-image: url(../images/footer-catch_angle02.png);
+  width: 4580px;
+  height: 1340px;
+  left: -930px;
+}
+.footer__inner {
+  width: 1080px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 11%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.footer__company-name {
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.footer__company-info-wrapper {
+  margin-top: 45px;
+  align-items: flex-start;
+}
+.footer__info-list {
+  grid-template-columns: repeat(4, max-content);
+  grid-template-rows: repeat(2, max-content);
+  column-gap: 60px;
+  row-gap: 30px;
+}
+.footer__info-list-item {
+}
+.footer__info-list-item + .footer__info-list-item {
+}
+.footer__info-list-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.footer__contact-wrapper {
+}
+.footer__contact-block {
+}
+.footer__contact-block + .footer__contact-block {
+  margin-top: 26px;
+}
+.footer__contact-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.footer__contact-info {
+  position: relative;
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 500;
+}
+.footer__contact-info--tel {
+  font-family: "Barlow";
+  font-size: 2.4rem;
+  letter-spacing: 0.05em;
+  padding-left: 26px;
+}
+.footer__contact-info--tel::before {
+  position: absolute;
+  content: url(../images/icon_footer-tel.svg);
+  width: 24px;
+  height: 24px;
+  display: block;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.footer__contact-info--mail {
+  font-size: 1.8rem;
+  padding-left: 28px;
+}
+.footer__contact-info--mail::before {
+  position: absolute;
+  content: url(../images/icon_footer-mail.svg);
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.footer__company-address-block {
+  margin-top: 36px;
+}
+.footer__company-address {
+  font-size: 1.2rem;
+}
+.footer__company-address + .footer__company-address {
+  margin-top: 8px;
+}
+.footer__copyright {
+  font-family: "Barlow";
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 25px;
+}
