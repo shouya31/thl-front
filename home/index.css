@@ -697,6 +697,7 @@ a:hover {
   padding-bottom: 6px;
   margin-bottom: 40px;
   display: inline-block;
+  font-weight: 500;
 }
 .products__list {
   grid-template-columns: repeat(2, 450px);
@@ -736,13 +737,14 @@ a:hover {
 }
 .products__card-name {
   font-size: 1.5rem;
+  font-weight: 500;
 }
 .products__card-name--lg {
   font-family: "Barlow";
   font-size: 2.6rem;
   font-weight: 500;
   letter-spacing: 0.05em;
-  margin-right: 4px;
+  margin-right: 10px;
 }
 .products__card-desc {
   font-size: 1.5rem;
@@ -1113,6 +1115,7 @@ body {
 .footer__contact-info--mail {
   font-size: 1.8rem;
   padding-left: 28px;
+  cursor: pointer;
 }
 .footer__contact-info--mail::before {
   position: absolute;
