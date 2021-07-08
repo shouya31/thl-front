@@ -112,7 +112,6 @@ a:hover {
   letter-spacing: 0.1em;
   font-weight: 300;
   line-height: 1.8;
-  letter-spacing: .4rem;
 }
 .cases-detail___catch {
   font-size: 2.4rem;
@@ -241,6 +240,7 @@ dl,dt,dd {
 }
 .cases-detail___client p {
   max-width: 440px;
+  line-height: 1;
 }
 .cases-detail___client img {
   width: 280px;
@@ -255,6 +255,8 @@ dl,dt,dd {
 }
 .cases-detail___client .client-message {
   font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: .0.05em;
 }
 .cases-detail___other-cases {
   margin-top: 80px;
@@ -469,9 +471,7 @@ body {
   content: "〉";
 }
 .breadcrumb-list__item:last-child {
-  font-size: 2.8rem;
-  flex-basis: 100%;
-  margin-top: 18px;
+
 }
 .breadcrumb-list__item:last-child::after {
   content: "";
@@ -508,9 +508,11 @@ body {
   text-align: center;
   width: 150px;
   border-radius: 18px;
-  padding: 12px 0 12px 20px;
+  padding: 10px 0 10px 40px;
   background-color: #10cc00;
   color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: .1em;
   position: relative;
   transition: .3s;
 }
@@ -524,7 +526,7 @@ body {
   width: 18px;
   height: 8px;
   position: absolute;
-  left: 32px;
+  left: 24px;
   top: 12px;
 }
 

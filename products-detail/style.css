@@ -56,7 +56,7 @@ a:hover {
 .products-detail___product-code {
   font-family: "Barlow";
   font-size: 4.8rem;
-  font-weight: 100;
+  font-weight: 500;
   letter-spacing: 0.05em;
   margin-bottom: 1rem;
 }
@@ -65,6 +65,7 @@ a:hover {
   font-weight: 100;
   letter-spacing: 0.05em;
   margin-bottom: 4rem;
+  line-height: 1.6;
 }
 .products-detail___product-explain {
   font-family: "Noto sans JP";
@@ -72,6 +73,7 @@ a:hover {
   font-weight: 100;
   letter-spacing: 0.05em;
   margin-bottom: 4rem;
+  line-height: 1.8;
 }
 .products-detail___product-link {
   display: flex;
@@ -120,6 +122,7 @@ a:hover {
 .products-detail___product-catalog span {
   display: inline-block;
   font-size: 1rem;
+  font-family: "Barlow";
   color: #fff;
   background-color: #222;
   padding: 4px 8px;
@@ -132,6 +135,9 @@ a:hover {
 .products-detail___image-wrapper .products-mark {
   margin-top: 20px;
 }
+.products-detail___spec {
+  margin-bottom: 80px;
+}
 .products-detail___spec__inner {
   display: flex;
   justify-content: space-between;
@@ -139,11 +145,10 @@ a:hover {
 .products-detail___spec-title {
   display: inline-block;
   font-size: 1.5rem;
-  font-weight: 100;
   letter-spacing: 0.05em;
   position: relative;
   text-align-last: justify;
-  min-width: 80px;
+  min-width: 48px;
   height: fit-content;
   position: relative;
 }
@@ -158,17 +163,22 @@ a:hover {
 }
 .products-detail___spec-info {
   display: flex;
-  width: 70%;
-  margin-bottom: 60px;
+  width: 760px;
+  margin-bottom: 80px;
+  font-size: 1.2rem;
+  letter-spacing: .05em;
+  line-height: 1.6;
 }
 .spec-info__item {
   display: inline-block;
   background-color: fff;
   box-shadow: 3px 3px 12px #1144881F;
   border-radius: 24px;
-  padding: 18px 10px;
-  text-align: center;
-  min-width: 170px;
+  padding: 13px 0 13px 60px;
+  text-align: left;
+  font-size: 1.5rem;
+  letter-spacing: .1em;
+  min-width: 175px;
   margin-right: 20px;
   position: relative;
 }
@@ -178,14 +188,16 @@ a:hover {
   width: 24px;
   height: 24px;
   position: absolute;
-  left: 30px;
-  top: 12px;
+  left: 20px;
+  top: 15px;
 }
 .spec-info__table {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 20px;
+  font-size: 1.2rem;
+  letter-spacing: .1em;
 }
 .spec-info__table dt,.spec-info__table dd {
   line-height: 4rem;
@@ -195,7 +207,6 @@ a:hover {
   width: 28%;
   background-color: #F5F7F8;
   border-top: solid 1px #DDE4E8;
-  font-weight: 100;
 }
 .spec-info__table dd {
   width: 70%;
@@ -206,6 +217,7 @@ a:hover {
 }
 .spec-info__caption {
   line-height: 20px;
+  font-size: 1.2rem;
 }
 .spec-info__product-document {
   margin-top: 10px;
@@ -399,13 +411,15 @@ body {
 }
 .previous-page {
   display: inline-block;
-  margin: 100px auto 0;
+  margin: 0 auto;
   text-align: center;
   width: 150px;
   border-radius: 18px;
-  padding: 12px 0 12px 20px;
+  padding: 10px 0 10px 40px;
   background-color: #10cc00;
   color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: .1em;
   position: relative;
   transition: .3s;
 }
@@ -419,10 +433,9 @@ body {
   width: 18px;
   height: 8px;
   position: absolute;
-  left: 32px;
+  left: 24px;
   top: 12px;
 }
-
 
 
 /* CONTACT */
