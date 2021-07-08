@@ -910,6 +910,7 @@ a:hover {
   display: inline-block;
   padding-bottom: 7px;
   border-bottom: 1px solid #222;
+  font-weight: 500;
 }
 .privacy__text {
   font-size: 1.5rem;

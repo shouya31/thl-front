@@ -81,13 +81,13 @@ a:hover {
 .cases-detail___content-title {
   display: inline-block;
   font-size: 1.5rem;
-  font-weight: 100;
   letter-spacing: 0.05em;
   position: relative;
   text-align-last: justify;
   min-width: 80px;
   height: fit-content;
   position: relative;
+  font-weight: 500;
 }
 .cases-detail___content-title::after {
   content: "";
@@ -158,6 +158,7 @@ dl,dt,dd {
   display: flex;
   align-items: center;
   border-top: solid 1px #DDE4E8;
+  font-weight: 500;
 }
 .data__table dt:first-of-type {
   border-top: none;
@@ -177,6 +178,7 @@ dl,dt,dd {
   font-size: 1.5rem;
   letter-spacing: 1.5px;
   line-height: 1.6;
+  font-weight: 500;
 }
 .data__table a {
   color: #10cc00;
