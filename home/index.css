@@ -915,6 +915,26 @@ a:hover {
 }
 .privacy__text-list-item {
 }
+.privacy__column {
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 37px;
+  margin-top: 48px;
+  border: 1px solid #10cc00;
+}
+.privacy__column-heading {
+  font-family: "Barlow";
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #10cc00;
+}
+.privacy__column-text {
+  font-size: 1.3rem;
+  letter-spacing: 0.1em;
+  margin-left: 35px;
+  line-height: 1.7;
+}
 .privacy__contact-btn {
   font-size: 1.2rem;
   letter-spacing: 0.1em;
