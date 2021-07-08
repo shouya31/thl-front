@@ -885,6 +885,72 @@ a:hover {
   margin-top: 10px;
 }
 
+/* privacy.html */
+.privacy {
+  padding: 80px 0 86px;
+}
+.privacy__container {
+  grid-template-columns: 200px auto;
+}
+.privacy__container + .privacy__container {
+  margin-top: 86px;
+}
+.privacy__section-title-wrapper {
+}
+.privacy__section-title {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+  display: inline-block;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #222;
+}
+.privacy__text {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+}
+.privacy__text-list {
+  list-style-type: auto;
+  list-style-position: inside;
+  margin-top: 30px;
+}
+.privacy__text-list-item {
+}
+.privacy__column {
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 37px;
+  margin-top: 48px;
+  border: 1px solid #10cc00;
+}
+.privacy__column-heading {
+  font-family: "Barlow";
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #10cc00;
+}
+.privacy__column-text {
+  font-size: 1.3rem;
+  letter-spacing: 0.1em;
+  margin-left: 35px;
+  line-height: 1.7;
+}
+.privacy__contact-btn {
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  padding: 18px 46px;
+  margin-top: 27px;
+  border: 1px solid #222;
+  display: inline-block;
+}
+.privacy__contact-btn:hover {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #222;
+}
+
 /* PARTS */
 /* ============================================ */
 
