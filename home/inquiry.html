@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THLホールディングスーフロント</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href=" ../css/reset.css" />
+    <link rel="stylesheet" href="../css/utility.css" />
+    <link rel="stylesheet" href=" ./index.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="top-angle__wrapper">
+      <p class="top-angle"></p>
+    </div>
+    <header class="header">
+      <div class="header__body fl-space-between">
+        <h1 class="header__company-name">
+          <p class="header__company-subname">工場・倉庫専門の照明メーカー</p>
+          <p class="header__company-mainname">THL Holdings</p>
+        </h1>
+        <nav class="header__global-nav">
+          <ul class="header__global-nav-list fl-start">
+            <li class="header__global-nav-list-item"><a href="" class="header__global-nav-link">ホーム</a></li>
+            <li class="header__global-nav-list-item"><a href="" class="header__global-nav-link">お知らせ</a></li>
+            <li class="header__global-nav-list-item"><a href="" class="header__global-nav-link">製品情報</a></li>
+            <li class="header__global-nav-list-item"><a href="" class="header__global-nav-link">導入事例</a></li>
+            <li class="header__global-nav-list-item"><a href="" class="header__global-nav-link">企業情報</a></li>
+            <li class="header__global-nav-list-item"><a href="" class="header__global-nav-link">お問い合わせ</a></li>
+            <li class="header__global-nav-list-item header__global-nav-list-item--last">
+              <a href="" class="header__global-nav-link">オンラインストア</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /.header -->
+
+    <main class="main main--under-layer">
+      <div class="page-info-block">
+        <div class="container fl-space-between">
+          <div class="breadcrumb-list__wrapper">
+            <ul class="breadcrumb-list fl-start">
+              <li class="breadcrumb-list__item">
+                <a href="" class="breadcrumb-list__link">ホーム</a>
+              </li>
+              <li class="breadcrumb-list__item">お問い合わせ</li>
+            </ul>
+            <!-- /.breadcrumb-list__wrapper -->
+          </div>
+          <h2 class="page-title">CONTACT</h2>
+        </div>
+      </div>
+      <!-- /.page-info-block -->
+
+      <section class="inquiry">
+        <div class="container">
+          <p class="inquiry__desc">
+            お問い合わせいただきありがとうございます。 <br />
+            お電話、または以下のフォームにご記入いただき、送信ボタンを押して下さい。<br />
+            土･日･祝日･休業日を除き、原則として3営業日以内にご返事させていただきます。
+          </p>
+          <p class="inquiry__desc-sub">
+            ※弊社ではお客様により低価格で製品のご提供を行うため、卸価格にて直接販売を行っております。<br />
+            その為、お客様のご都合により業者様経由での販売も可能ですが、<br />
+            その際の業者様とのお取引価格もお客様販売価格と同価とさせて頂きます。<br />
+            お取引希望の業者様には事前にご理解を頂きお問合せ頂ければ幸いです。
+          </p>
+
+          <div class="inquiry__container grid">
+            <div class="inquiry__section-title-wrapper">
+              <h3 class="inquiry__section-title">お電話から</h3>
+            </div>
+            <div class="inquiry__body">
+              <a href="tel:0800-1111-505" class="inquiry__tel">0800-1111-505</a>
+              <p class="inquiry__tel-time">フリーコール 平日9:00－18:00</p>
+            </div>
+            <div class="inquiry__section-title-wrapper">
+              <h3 class="inquiry__section-title">メールフォームから</h3>
+              <p class="inquiry__section-must-text"><span class="inquiry-form-must">*</span>必須項目</p>
+            </div>
+            <div class="inquiry__body">
+              <form action="" class="inquiry__form">
+                <div class="inquiry__form-block">
+                  <h3 class="inquiry__form-title fl-start">お問い合わせ内容<span class="inquiry-form-must">*</span></h3>
+                  <div class="inquiry__form-container">
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="product-contents" class="inquiry__form-label">
+                          <input class="inquiry__form-checkbox" type="checkbox" name="" id="product-contents" />
+                          <span class="inquiry__form-checkmark"></span>
+                          具体的な製品の内容を知りたい
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <p class="inquiry__form-question-title">
+                        カタログを見たい（<label for="send" class="inquiry__form-label inquiry__form-label--unique">
+                          <input class="inquiry__form-checkbox" type="checkbox" name="" id="send" />
+                          <span class="inquiry__form-checkmark"></span>
+                          送付希望 </label
+                        >）
+                      </p>
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="tecol" class="inquiry__form-label">
+                          <input class="inquiry__form-checkbox" type="checkbox" name="" id="tecol" />
+                          <span class="inquiry__form-checkmark"></span>
+                          TecoLカタログ
+                        </label>
+                        <label for="led" class="inquiry__form-label">
+                          <input class="inquiry__form-checkbox" type="checkbox" name="" id="led" />
+                          <span class="inquiry__form-checkmark"></span>
+                          LEDカタログ
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <p class="inquiry__form-question-title">製品資料が欲しい</p>
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="product-standard" class="inquiry__form-label">
+                          <input class="inquiry__form-checkbox" type="checkbox" name="" id="product-standard" />
+                          <span class="inquiry__form-checkmark"></span>
+                          製品規格
+                        </label>
+                        <label for="price-table" class="inquiry__form-label">
+                          <input class="inquiry__form-checkbox" type="checkbox" name="" id="price-table" />
+                          <span class="inquiry__form-checkmark"></span>
+                          価格表
+                        </label>
+                        <label for="other-data" class="inquiry__form-label">
+                          <input class="inquiry__form-checkbox" type="checkbox" name="" id="other-data" />
+                          <span class="inquiry__form-checkmark"></span>
+                          その他資料
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="check-product" class="inquiry__form-label">
+                          <input class="inquiry__form-checkbox" type="checkbox" name="" id="check-product" />
+                          <span class="inquiry__form-checkmark"></span>
+                          実際の製品を見てみたい
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="reduction-simulation" class="inquiry__form-label">
+                          <input class="inquiry__form-checkbox" type="checkbox" name="" id="reduction-simulation" />
+                          <span class="inquiry__form-checkmark"></span>
+                          削減シミュレーション希望（下記ヒアリングシートをご記入ください）
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="estimation" class="inquiry__form-label">
+                          <input class="inquiry__form-checkbox" type="checkbox" name="" id="estimation" />
+                          <span class="inquiry__form-checkmark"></span>
+                          見積りを取りたい（下記ヒアリングシートをご記入ください）
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="wholesale-sale" class="inquiry__form-label">
+                          <input class="inquiry__form-checkbox" type="checkbox" name="" id="wholesale-sale" />
+                          <span class="inquiry__form-checkmark"></span>
+                          自社のお客様への卸販売
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper inquiry__form-label inquiry__form-grid grid pl0">
+                        <label for="other-imquiry" class="inquiry__form-label">
+                          <input class="inquiry__form-checkbox" type="checkbox" name="" id="other" />
+                          <span class="inquiry__form-checkmark"></span>
+                          その他
+                        </label>
+                        <input
+                          class="inquiry__form-inline-text"
+                          type="text"
+                          name=""
+                          id=""
+                          placeholder="その他の内容を記入"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- お問い合わせフォーム -->
+
+                <div class="inquiry__form-block">
+                  <h3 class="inquiry__form-title fl-start">ヒアリングシート（削減シミュレーション作成）</h3>
+                  <div class="inquiry__form-container">
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="factory" class="inquiry__form-label">
+                          <input class="inquiry__form-checkbox" type="checkbox" name="" id="factory" />
+                          <span class="inquiry__form-checkmark"></span>
+                          工場
+                        </label>
+                        <label for="warehouse" class="inquiry__form-label">
+                          <input class="inquiry__form-checkbox" type="checkbox" name="" id="warehouse" />
+                          <span class="inquiry__form-checkmark"></span>
+                          倉庫
+                        </label>
+                        <label for="store" class="inquiry__form-label">
+                          <input class="inquiry__form-checkbox" type="checkbox" name="" id="store" />
+                          <span class="inquiry__form-checkmark"></span>
+                          店舗
+                        </label>
+                        <label for="pe-facility" class="inquiry__form-label">
+                          <input class="inquiry__form-checkbox" type="checkbox" name="" id="pe-facility" />
+                          <span class="inquiry__form-checkmark"></span>
+                          体育施設
+                        </label>
+                        <label for="parking" class="inquiry__form-label">
+                          <input class="inquiry__form-checkbox" type="checkbox" name="" id="parking" />
+                          <span class="inquiry__form-checkmark"></span>
+                          駐車場
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper inquiry__form-label inquiry__form-grid grid pl0">
+                        <label for="other-reduction-simulation" class="inquiry__form-label">
+                          <input
+                            class="inquiry__form-checkbox"
+                            type="checkbox"
+                            name=""
+                            id="other-reduction-simulation"
+                          />
+                          <span class="inquiry__form-checkmark"></span>
+                          その他
+                        </label>
+                        <input
+                          class="inquiry__form-inline-text"
+                          type="text"
+                          name=""
+                          id=""
+                          placeholder="その他の内容を記入"
+                        />
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="working-days" class="inquiry__form-label inquiry__form-grid grid pl0">
+                          <span class="inquiry__form-text">月間稼働日数</span>
+                          <div class="inquiry__form-select-body fl-start">
+                            <div class="inquiry__form-select-wrapper">
+                              <select class="inquiry__form-select" name="" id="working-days">
+                                <option value="">選択</option>
+                              </select>
+                            </div>
+                            <span class="inquiry__form-unit">日</span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="average-use-time" class="inquiry__form-label inquiry__form-grid grid pl0">
+                          <span class="inquiry__form-text">平均使用時間</span>
+                          <div class="inquiry__form-select-body fl-start">
+                            <div class="inquiry__form-select-wrapper">
+                              <select class="inquiry__form-select" name="" id="average-use-time">
+                                <option value="">選択</option>
+                              </select>
+                            </div>
+                            <span class="inquiry__form-unit">時間（1日あたり）</span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <div
+                          for="use-lamp"
+                          class="inquiry__form-label inquiry__form-grid grid align-items-baseline pl0"
+                        >
+                          <span class="inquiry__form-text">使用ランプ</span>
+                          <div class="">
+                            <div class="inquiry__form-select-body fl-start">
+                              <label class="inquiry__form-select-wrapper" for="use-lamp1">
+                                <select class="inquiry__form-select" name="" id="use-lamp1">
+                                  <option value="">ランプ1</option>
+                                </select>
+                              </label>
+                              <span class="inquiry__form-unit">×</span>
+                              <input
+                                class="inquiry__form-inline-text inquiry__form-inline-text--sm"
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="灯数"
+                              />
+                              <span class="inquiry__form-unit">灯</span>
+                            </div>
+                            <div class="inquiry__form-select-body fl-start mt10">
+                              <label class="inquiry__form-select-wrapper" for="use-lamp2">
+                                <select class="inquiry__form-select" name="" id="use-lamp2">
+                                  <option value="">ランプ2</option>
+                                </select>
+                              </label>
+                              <span class="inquiry__form-unit">×</span>
+                              <input
+                                class="inquiry__form-inline-text inquiry__form-inline-text--sm"
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="灯数"
+                              />
+                              <span class="inquiry__form-unit">灯</span>
+                            </div>
+                            <div class="inquiry__form-select-body fl-start mt10">
+                              <label class="inquiry__form-select-wrapper" for="use-lamp3">
+                                <select class="inquiry__form-select" name="" id="use-lamp3">
+                                  <option value="">ランプ3</option>
+                                </select>
+                              </label>
+                              <span class="inquiry__form-unit">×</span>
+                              <input
+                                class="inquiry__form-inline-text inquiry__form-inline-text--sm"
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="灯数"
+                              />
+                              <span class="inquiry__form-unit">灯</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <div class="inquiry__form-label inquiry__form-grid grid align-items-baseline pl0">
+                          <span class="inquiry__form-text">明るさの希望</span>
+                          <div class="">
+                            <div class="inquiry__form-label-wrapper fl-start">
+                              <label for="energy-save" class="inquiry__form-label inquiry__form-label--radio">
+                                <input class="inquiry__form-radio" type="radio" name="brightness" id="energy-save" />
+                                <span class="inquiry__form-radiomark"></span>
+                                省エネを重視
+                              </label>
+                              <label for="keep-condition" class="inquiry__form-label inquiry__form-label--radio">
+                                <input class="inquiry__form-radio" type="radio" name="brightness" id="keep-condition" />
+                                <span class="inquiry__form-radiomark"></span>
+                                現状と同等程度
+                              </label>
+                              <label for="brightness" class="inquiry__form-label inquiry__form-label--radio">
+                                <input class="inquiry__form-radio" type="radio" name="brightness" id="brightness" />
+                                <span class="inquiry__form-radiomark"></span>
+                                明るさを重視（省エネより明るくなることを優先）
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <div class="inquiry__form-label inquiry__form-grid grid align-items-baseline pl0">
+                          <span class="inquiry__form-text">指定工事業者</span>
+                          <div class="">
+                            <div class="inquiry__form-label-wrapper fl-start">
+                              <label for="contractor-true" class="inquiry__form-label inquiry__form-label--radio">
+                                <input
+                                  class="inquiry__form-radio"
+                                  type="radio"
+                                  name="contractor"
+                                  id="contractor-true"
+                                />
+                                <span class="inquiry__form-radiomark"></span>
+                                あり
+                              </label>
+                              <label for="contractor-false" class="inquiry__form-label inquiry__form-label--radio">
+                                <input
+                                  class="inquiry__form-radio"
+                                  type="radio"
+                                  name="contractor"
+                                  id="contractor-false"
+                                />
+                                <span class="inquiry__form-radiomark"></span>
+                                なし
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <div for="use-lamp" class="inquiry__form-label inquiry__form-grid grid align-items-start pl0">
+                          <span class="inquiry__form-text">特記事項</span>
+                          <div class="">
+                            <textarea class="inquiry__form-textarea" name="" id="" placeholder="特記事項"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="inquiry__form-block">
+                  <h3 class="inquiry__form-title fl-start">お客様情報</h3>
+                  <div class="inquiry__form-container">
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="your-company-name" class="inquiry__form-label inquiry__form-grid grid pl0">
+                          <span class="inquiry__form-text">貴社名<span class="inquiry-form-must">*</span></span>
+                          <div class="inquiry__form-select-body fl-start">
+                            <input
+                              class="inquiry__form-inline-text"
+                              type="text"
+                              name=""
+                              id="your-company-name"
+                              placeholder="貴社名をご記入ください"
+                            />
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <div class="inquiry__form-label inquiry__form-grid grid align-items-baseline pl0">
+                          <span class="inquiry__form-text">導入予定箇所<span class="inquiry-form-must">*</span></span>
+                          <div class="">
+                            <div class="inquiry__form-label-wrapper fl-start">
+                              <label for="for-self-factory" class="inquiry__form-label inquiry__form-label--radio">
+                                <input
+                                  class="inquiry__form-radio"
+                                  type="radio"
+                                  name="brightness"
+                                  id="for-self-factory"
+                                />
+                                <span class="inquiry__form-radiomark"></span>
+                                自社工場または設備
+                              </label>
+                              <label for="for-client" class="inquiry__form-label inquiry__form-label--radio">
+                                <input class="inquiry__form-radio" type="radio" name="brightness" id="for-client" />
+                                <span class="inquiry__form-radiomark"></span>
+                                自社以外（卸様・建築業者様など）
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="your-name" class="inquiry__form-label inquiry__form-grid grid pl0">
+                          <span class="inquiry__form-text">ご担当者名<span class="inquiry-form-must">*</span></span>
+                          <div class="inquiry__form-select-body fl-start">
+                            <input
+                              class="inquiry__form-inline-text"
+                              type="text"
+                              name=""
+                              id="your-name"
+                              placeholder="ご担当者名をご記入ください"
+                            />
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="your-name-furigana" class="inquiry__form-label inquiry__form-grid grid pl0">
+                          <span class="inquiry__form-text">フリガナ<span class="inquiry-form-must">*</span></span>
+                          <div class="inquiry__form-select-body fl-start">
+                            <input
+                              class="inquiry__form-inline-text"
+                              type="text"
+                              name=""
+                              id="your-name-furigana"
+                              placeholder="ご担当者名のフリガナをご記入ください"
+                            />
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="post-number" class="inquiry__form-label inquiry__form-grid grid pl0">
+                          <span class="inquiry__form-text">郵便番号</span>
+                          <div class="inquiry__form-select-body fl-start">
+                            <input
+                              class="inquiry__form-inline-text"
+                              type="text"
+                              name=""
+                              id="post-number"
+                              placeholder="000-0000"
+                            />
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="prefectures" class="inquiry__form-label inquiry__form-grid grid pl0">
+                          <span class="inquiry__form-text">都道府県<span class="inquiry-form-must">*</span></span>
+                          <div class="inquiry__form-select-body fl-start">
+                            <div class="inquiry__form-select-wrapper">
+                              <select class="inquiry__form-select" name="" id="prefectures">
+                                <option value="">選択</option>
+                              </select>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="your-company-address" class="inquiry__form-label inquiry__form-grid grid pl0">
+                          <span class="inquiry__form-text">貴社所在地<span class="inquiry-form-must">*</span></span>
+                          <div class="inquiry__form-select-body fl-start">
+                            <input
+                              class="inquiry__form-inline-text"
+                              type="text"
+                              name=""
+                              id="your-company-address"
+                              placeholder="貴社所在地をご記入ください"
+                            />
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="phone-number" class="inquiry__form-label inquiry__form-grid grid pl0">
+                          <span class="inquiry__form-text">電話番号<span class="inquiry-form-must">*</span></span>
+                          <div class="inquiry__form-select-body fl-start">
+                            <input
+                              class="inquiry__form-inline-text"
+                              type="text"
+                              name=""
+                              id="phone-number"
+                              placeholder="000-000-0000"
+                            />
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="fax-number" class="inquiry__form-label inquiry__form-grid grid pl0">
+                          <span class="inquiry__form-text">FAX番号</span>
+                          <div class="inquiry__form-select-body fl-start">
+                            <input
+                              class="inquiry__form-inline-text"
+                              type="text"
+                              name=""
+                              id="fax-number"
+                              placeholder="000-000-0000"
+                            />
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="email" class="inquiry__form-label inquiry__form-grid grid pl0">
+                          <span class="inquiry__form-text">メールアドレス<span class="inquiry-form-must">*</span></span>
+                          <div class="inquiry__form-select-body fl-start">
+                            <input
+                              class="inquiry__form-inline-text"
+                              type="text"
+                              name=""
+                              id="email"
+                              placeholder="メールアドレスをご記入ください"
+                            />
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="email-confirm" class="inquiry__form-label inquiry__form-grid grid pl0">
+                          <span class="inquiry__form-text"
+                            >メールアドレス<span class="inquiry-form-must">*</span><br />※確認用</span
+                          >
+                          <div class="inquiry__form-select-body fl-start">
+                            <input
+                              class="inquiry__form-inline-text"
+                              type="text"
+                              name=""
+                              id="email-confirm"
+                              placeholder="上記と同じメールアドレスをご記入ください"
+                            />
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <label for="website-url" class="inquiry__form-label inquiry__form-grid grid pl0">
+                          <span class="inquiry__form-text">ウェブサイト</span>
+                          <div class="inquiry__form-select-body fl-start">
+                            <input
+                              class="inquiry__form-inline-text"
+                              type="text"
+                              name=""
+                              id="website-url"
+                              placeholder="URLをご記入ください"
+                            />
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="inquiry__form-block">
+                  <h3 class="inquiry__form-title fl-start">
+                    詳細内容・ご意見・ご要望などがございましたらご記入ください
+                  </h3>
+                  <div class="inquiry__form-container">
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <div class="">
+                          <textarea
+                            class="inquiry__form-textarea"
+                            name=""
+                            id=""
+                            placeholder="詳細内容・ご意見・ご要望"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inquiry__form-question-block">
+                      <div class="inquiry__form-label-wrapper">
+                        <div class="">
+                          <input class="inquiry__form-submit" type="submit" value="送信内容の確認" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.inquiry -->
+
+      <section class="contact">
+        <h2 class="contact__heading">お問い合わせ・ご相談はこちらから</h2>
+        <div class="contact__inner">
+          <ul class="contact__list fl-space-between">
+            <li class="contact__list-item">
+              <div class="contact__card">
+                <a href="" class="contact__catd-link">
+                  <p class="contact__card-device">お電話から</p>
+                  <p href="tel:0800-1111-505" class="contact__card-info contact__card-info--tel">0800-1111-505</p>
+                  <p class="contact__card-subinfo">フリーコール 平日9:00－18:00</p>
+                </a>
+              </div>
+            </li>
+            <li class="contact__list-item">
+              <div class="contact__card">
+                <a href="" class="contact__catd-link">
+                  <p class="contact__card-device">ウェブから</p>
+                  <p class="contact__card-info contact__card-info--mail">メールフォーム</p>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p class="footer__bg footer__bg--white"></p>
+        <div class="footer__inner footer__inner--under-layer">
+          <p class="footer__company-name">株式会社THLホールディングス</p>
+          <div class="footer__company-info-wrapper fl-space-between">
+            <ul class="footer__info-list grid">
+              <li class="footer__info-list-item"><a href="" class="footer__info-list-link">ホーム</a></li>
+              <li class="footer__info-list-item"><a href="" class="footer__info-list-link">製品情報</a></li>
+              <li class="footer__info-list-item"><a href="" class="footer__info-list-link">企業情報</a></li>
+              <li class="footer__info-list-item"><a href="" class="footer__info-list-link">オンラインストア</a></li>
+              <li class="footer__info-list-item"><a href="" class="footer__info-list-link">お知らせ</a></li>
+              <li class="footer__info-list-item"><a href="" class="footer__info-list-link">導入事例</a></li>
+              <li class="footer__info-list-item"><a href="" class="footer__info-list-link">お問い合わせ</a></li>
+              <li class="footer__info-list-item"><a href="" class="footer__info-list-link">プライバシーポリシー</a></li>
+            </ul>
+            <div class="footer__contact-wrapper">
+              <div class="footer__contact-block">
+                <p class="footer__contact-text">お電話からのお問い合わせ（フリーコール 平日9:00－18:00）</p>
+                <a href="tel:0800-1111-505" class="footer__contact-info footer__contact-info--tel">0800-1111-505</a>
+              </div>
+              <div class="footer__contact-block">
+                <p class="footer__contact-text">ウェブからのお問い合わせ</p>
+                <a class="footer__contact-info footer__contact-info--mail">メールフォーム</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__company-address-block">
+            <p class="footer__company-address">本社：〒983-0013 宮城県仙台市宮城野区中野5丁目4-31</p>
+            <p class="footer__company-address">
+              支店：東北／関東／北関東／北陸／東海／関西／九州　　営業所：新潟／長野／岡山／広島／四国
+            </p>
+          </div>
+          <p class="footer__copyright">©︎THL Holdings Co.,Ltd.</p>
+        </div>
+      </footer>
+      <!-- /.footer -->
+    </main>
+    <!-- /.main -->
+  </body>
+  <script src="../js/script.js"></script>
+</html>
