@@ -1,3 +1,14 @@
+.sp-only {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .pc-only {
+    display: none;
+  }
+  .sp-only {
+    display: block;
+  }
+}
 .mt0 {
   margin-top: 0 !important;
 }

@@ -936,22 +936,17 @@ a:hover {
 .inquiry__body {
 }
 .inquiry__tel {
-  position: relative;
   font-family: "Barlow";
   font-size: 3.2rem;
   font-weight: 500;
   letter-spacing: 0.015em;
-  padding-left: 46px;
 }
-.inquiry__tel::before {
-  position: absolute;
-  content: url(../images/icon_tel-black.svg);
-  width: 36px;
-  height: 36px;
-  display: block;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+.inquiry__tel-icon {
+  vertical-align: bottom;
+}
+.inquiry__tel:hover .inquiry__tel-icon path {
+  fill: #10cc00;
+  transition: ease-in-out 0.2s;
 }
 .inquiry__tel-time {
   font-size: 1.5rem;
@@ -1553,4 +1548,701 @@ body {
   font-size: 0.9rem;
   font-weight: 600;
   margin-top: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  /* index.html */
+  /* ============================================ */
+
+  /* COMNTACT */
+  .contact {
+    padding: 0 0 40px;
+  }
+  .contact.bg-gray {
+    background-color: #f5f7f8;
+  }
+  .contact__heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+  }
+  .contact__inner {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contact__list {
+    margin-top: 44px;
+    display: block;
+  }
+  .contact__list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    background-color: #222;
+    padding: 18px 58px;
+    margin-top: 20px;
+  }
+  .contact__card {
+  }
+  .contact__catd-link {
+    letter-spacing: 0.1em;
+  }
+  .contact__card-device {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.1em;
+  }
+  .contact__card-info {
+    font-family: "Barlow";
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 13px;
+    letter-spacing: 0.1em;
+  }
+  .contact__card-info--tel {
+    position: relative;
+    padding-left: 26px;
+  }
+  .contact__card-info--tel::before {
+    position: absolute;
+    content: url(../images/icon_tel.svg);
+    width: 24px;
+    height: 24px;
+    display: block;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .contact__card-subinfo {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 4px;
+    letter-spacing: 0.1em;
+  }
+  .contact__card-info--mail {
+    position: relative;
+    padding-left: 28px;
+    font-size: 1.8rem;
+  }
+  .contact__card-info--mail::before {
+    position: absolute;
+    content: url(../images/icon_mail.svg);
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  /* inquiry.html */
+  .inquiry {
+    padding: 80px 0;
+  }
+  .inquiry__desc {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+  }
+  .inquiry__desc-sub {
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    line-height: 1.7;
+    margin-top: 46px;
+  }
+  .inquiry__container {
+    grid-template-columns: auto;
+    row-gap: 30px;
+    margin-top: 60px;
+  }
+  .inquiry__section-title-wrapper {
+  }
+  .inquiry__section-title-wrapper:not(:first-child) {
+    margin-top: 40px;
+  }
+  .inquiry__section-title {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+    display: inline-block;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #222;
+    font-weight: 500;
+  }
+  .inquiry__section-must-text {
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    margin-top: 14px;
+  }
+  .inquiry__body {
+  }
+  .inquiry__tel {
+    font-family: "Barlow";
+    font-size: 3.2rem;
+    font-weight: 500;
+    letter-spacing: 0.015em;
+  }
+  .inquiry__tel-time {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    margin-top: 12px;
+  }
+  .inquiry__form-title {
+  }
+  .inquiry__form-title::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #10cc00;
+    border-radius: 50%;
+    margin-right: 4px;
+  }
+  .inquiry-form-must {
+    color: #ed7f5d;
+  }
+  .inquiry__form-block {
+  }
+  .inquiry__form-block + .inquiry__form-block {
+    margin-top: 86px;
+  }
+  .inquiry__form-title {
+    position: relative;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+  }
+  .inquiry__form-container {
+    margin-top: 24px;
+  }
+  .inquiry__form-question-block {
+  }
+  .inquiry__form-question-block + .inquiry__form-question-block {
+    margin-top: 36px;
+  }
+  .inquiry__form-label-wrapper {
+    flex-wrap: wrap;
+  }
+  .inquiry__form-label {
+    position: relative;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    user-select: none;
+    padding-left: 30px;
+    display: block;
+  }
+  .inquiry__form-label.inquiry__form-label--unique {
+    margin-left: 4px;
+    padding-left: 20px;
+    display: inline;
+  }
+  .inquiry__form-label + .inquiry__form-label {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .inquiry__form-label.inquiry__form-label--radio {
+    margin-right: 18px;
+    margin-bottom: 10px;
+  }
+  .inquiry__form-label.inquiry__form-label--radio + .inquiry__form-label.inquiry__form-label--radio {
+    margin-left: 0;
+    line-height: 1.8;
+  }
+  .inquiry__form-checkbox {
+    display: none;
+  }
+  .inquiry__form-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: solid 1px #dde4e8;
+    background-color: #f5f7f8;
+  }
+  .inquiry__form-checkmark::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+  .inquiry__form-checkbox:checked + .inquiry__form-checkmark {
+    background: #2e80ff;
+    border-color: #2e80ff;
+  }
+  .inquiry__form-checkbox:checked + .inquiry__form-checkmark::after {
+    opacity: 1;
+  }
+  .inquiry__form-radio {
+    display: none;
+  }
+  .inquiry__form-radiomark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid 1px #dde4e8;
+    background-color: #f5f7f8;
+  }
+  .inquiry__form-radiomark::after {
+    content: "";
+    position: absolute;
+    background: #2e80ff;
+    border-radius: 50%;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    opacity: 0;
+  }
+  .inquiry__form-radio:checked + .inquiry__form-radiomark::after {
+    opacity: 1;
+  }
+  .inquiry__form-question-title {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 15px;
+  }
+  .inquiry__form-inline-text {
+    display: block;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    padding: 24px 0 24px 20px;
+    width: 100%;
+    background-color: #f5f7f8;
+    border: 1px solid #dde4e8;
+    margin-top: 15px;
+  }
+  .inquiry__form-inline-text::placeholder {
+    color: #999;
+  }
+  .inquiry__form-inline-text.inquiry__form-inline-text--sm {
+    width: 240px;
+    margin-left: 0;
+    padding: 12px 21px;
+    display: inline;
+    vertical-align: baseline;
+  }
+  .inquiry__form-text {
+    display: block;
+    margin-bottom: 16px;
+  }
+  .inquiry__form-grid {
+    grid-template-columns: auto;
+    align-items: center;
+  }
+  .inquiry__form-select-body {
+    cursor: default;
+    display: block;
+  }
+  .inquiry__form-select-body + .inquiry__form-select-body {
+    margin-top: 30px !important;
+  }
+  .inquiry__form-select-wrapper {
+    position: relative;
+    width: fit-content;
+    display: inline;
+  }
+  .inquiry__form-select-wrapper::after {
+    content: url(../images/icon_filter-arrow.svg);
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-48%);
+    pointer-events: none;
+  }
+  .inquiry__form-select {
+    font-size: 1.3rem;
+    padding: 12px 21px;
+    border: 1px solid #dde4e8;
+    width: 240px;
+    cursor: pointer;
+  }
+  .inquiry__form-unit {
+    margin: 0 8px;
+    display: inline;
+  }
+  .inquiry__form-textarea {
+    display: inline-block;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    padding: 24px 0 24px 20px;
+    width: 100%;
+    min-height: 257px;
+    background-color: #f5f7f8;
+    border: 1px solid #dde4e8;
+  }
+  .inquiry__form-submit {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    background-color: #222;
+    padding: 22px 0;
+  }
+
+  /* PARTS */
+  /* ============================================ */
+
+  /* body */
+  body {
+    position: relative;
+    overflow-x: clip;
+  }
+  body.noscroll {
+    overflow: hidden;
+  }
+  .top-angle__wrapper {
+    overflow: hidden;
+  }
+  .top-angle {
+    display: block;
+    width: 100%;
+    position: absolute;
+    mix-blend-mode: multiply;
+    background-image: url(../images/first-view-angle.png);
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  /* HEADER */
+  .header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+  }
+  .header.js-scroll {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: #fff;
+    box-shadow: 4px 4px 12px 0px rgb(17 68 136 / 12%);
+  }
+  .header__body {
+    width: 1120px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 40px;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 4px 4px 12px 0px rgb(17 68 136 / 12%);
+  }
+  .header.js-scroll .header__body {
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .header__company-name {
+    padding-left: 40px;
+  }
+  .header.js-scroll .header__company-name {
+    padding: 7px 0;
+  }
+  .header__company-subname {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+  }
+  .header__company-mainname {
+    font-family: "Barlow";
+    font-size: 3.2rem;
+    font-weight: 500;
+    letter-spacing: 0.015em;
+    margin-top: 8px;
+  }
+  .header__global-nav {
+  }
+  .header__global-nav-list {
+  }
+  .header__global-nav-list-item {
+  }
+  .header__global-nav-list-item + .header__global-nav-list-item {
+    margin-left: 30px;
+  }
+  .header__global-nav-list-item + .header__global-nav-list-item.header__global-nav-list-item--last {
+  }
+  .header__global-nav-link {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+  }
+  .header__global-nav-list-item
+    + .header__global-nav-list-item.header__global-nav-list-item--last
+    .header__global-nav-link {
+    display: block;
+    color: #fff;
+    background-color: #222;
+    padding: 42px 35px;
+  }
+  .header.js-scroll
+    .header__global-nav-list-item
+    + .header__global-nav-list-item.header__global-nav-list-item--last
+    .header__global-nav-link {
+    padding: 13px 24px;
+    border-radius: 20px;
+  }
+  .header-sm {
+    padding: 10px;
+  }
+  .header-sm__body {
+  }
+  .header-sm__company-subname {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+  }
+  .header-sm__company-mainname {
+    font-family: "Barlow";
+    font-size: 3.2rem;
+    font-weight: 500;
+    letter-spacing: 0.015em;
+    margin-top: 8px;
+  }
+  .nav-wrapper {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .header-nav {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 2;
+    opacity: 0.9;
+  }
+  .header-nav .nav-list {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .header-nav .nav-item {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .header-nav .nav-link {
+    font-size: 1.8rem;
+  }
+  .burger-btn {
+    display: block;
+    width: 37px;
+    height: 37px;
+    position: relative;
+    z-index: 3;
+    border: none;
+  }
+  .bar {
+    width: 20px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #222;
+  }
+  .bar_top {
+    top: 10px;
+  }
+  .bar_mid {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bar_bottom {
+    bottom: 10px;
+  }
+  .burger-btn.close .bar_top {
+    transform: translate(-50%, 10px) rotate(45deg);
+    transition: transform 0.3s;
+  }
+  .burger-btn.close .bar_mid {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .burger-btn.close .bar_bottom {
+    transform: translate(-50%, -6px) rotate(-45deg);
+    transition: transform 0.3s;
+  }
+
+  /* MAIN */
+  .main {
+    padding: 0 2%;
+  }
+  .main.main--under-layer {
+    padding-top: 60px;
+  }
+
+  /* FOOTER */
+  .footer {
+    letter-spacing: 0.1em;
+    position: relative;
+  }
+  .footer-catch {
+    height: 1000px;
+    overflow: hidden;
+  }
+  .footer__bg {
+    display: block;
+    background-image: url(../images/bg_footer.png);
+    height: 360px;
+    background-position-x: center;
+    background-color: #f5f7f8;
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+  }
+  .footer__bg.footer__bg--white {
+    background-color: #fff;
+  }
+  .footer-catch__inner {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .fotter-catch__block {
+  }
+  .footer-catch__text {
+    font-family: "Barlow";
+    font-size: 10rem;
+    font-weight: 100;
+  }
+  .footer-catch__angle-wrapper {
+    position: relative;
+  }
+  .footer-catch__angle {
+    position: absolute;
+    display: block;
+    mix-blend-mode: multiply;
+    transform: translateY(-20px);
+  }
+  .footer-catch__angle.footer-catch__angle01 {
+    background-image: url(../images/footer-catch_angle01.png);
+    width: 3640px;
+    height: 2114px;
+    left: 8px;
+  }
+  .footer-catch__angle.footer-catch__angle02 {
+    background-image: url(../images/footer-catch_angle02.png);
+    width: 4580px;
+    height: 1340px;
+    left: -930px;
+  }
+  .footer__inner {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 11%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .footer__inner.footer__inner--under-layer {
+    position: static;
+    transform: translateX(0%);
+    padding: 67px 0 60px;
+  }
+  .footer__company-name {
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+  }
+  .footer__company-info-wrapper {
+    display: block;
+    margin-top: 45px;
+    align-items: flex-start;
+  }
+  .footer__info-list {
+    grid-template-columns: repeat(4, max-content);
+    grid-template-rows: repeat(2, max-content);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  .footer__info-list-item {
+  }
+  .footer__info-list-item + .footer__info-list-item {
+  }
+  .footer__info-list-link {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .footer__contact-wrapper {
+    margin-top: 60px;
+  }
+  .footer__contact-block {
+  }
+  .footer__contact-block + .footer__contact-block {
+    margin-top: 26px;
+  }
+  .footer__contact-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .footer__contact-info {
+    position: relative;
+    display: inline-block;
+    margin-top: 12px;
+    font-weight: 500;
+  }
+  .footer__contact-info--tel {
+    font-family: "Barlow";
+    font-size: 2.4rem;
+    letter-spacing: 0.05em;
+    padding-left: 26px;
+  }
+  .footer__contact-info--tel::before {
+    position: absolute;
+    content: url(../images/icon_footer-tel.svg);
+    width: 24px;
+    height: 24px;
+    display: block;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .footer__contact-info--mail {
+    font-size: 1.8rem;
+    padding-left: 28px;
+    cursor: pointer;
+  }
+  .footer__contact-info--mail::before {
+    position: absolute;
+    content: url(../images/icon_footer-mail.svg);
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .footer__company-address-block {
+    margin-top: 36px;
+  }
+  .footer__company-address {
+    font-size: 1.2rem;
+  }
+  .footer__company-address + .footer__company-address {
+    margin-top: 8px;
+  }
+  .footer__copyright {
+    font-family: "Barlow";
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 25px;
+  }
 }
