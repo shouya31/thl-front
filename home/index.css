@@ -802,6 +802,7 @@ a:hover {
 }
 .company__text.company__text--accent {
   color: #10cc00;
+  padding: 10px;
 }
 .company__vision {
   background-color: #f5f7f8;
@@ -962,15 +963,19 @@ a:hover {
 .firstview__wrapper.firstview__wrapper--prowork {
   overflow: unset;
 }
-.first-view.first-view--prowork {
+.first-view--prowork {
   width: 100%;
   max-width: 1440px;
   height: 100vh;
   max-height: 680px;
   margin: 0px auto;
-  background-image: url("../images/prowork_firstview.png");
-  background-position: center center;
   position: relative;
+
+}
+.firstview__wrapper--prowork.firstview__wrapper{
+  background-image: url("../images/prowork_firstview.png") !important;
+  background-position: center center;
+  background-size: cover;
 }
 .prowork__catchcopy-wrapper {
   position: absolute;
