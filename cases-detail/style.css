@@ -191,17 +191,26 @@ dl,dt,dd {
 .none {
   color: #fff;
 }
+
+.equipment p {
+  border-bottom: solid 1px #DDE4E8;
+}
+.equipment p:last-of-type {
+  border-bottom: none;
+}
 .value p {
   font-size: 3.2rem;
   font-family: "Barlow";
   font-weight: 500;
   letter-spacing: 0.015em;
 }
-
 .after.value p {
   color: #10cc00;
   font-weight: bold;
   padding-right: 4rem;
+}
+.after.value .unit {
+  color: #10cc00;
 }
 .unit {
   font-size: 2rem;
@@ -474,12 +483,6 @@ body {
 .breadcrumb-list__item::after {
   content: "〉";
 }
-.breadcrumb-list__item:last-child {
-
-}
-.breadcrumb-list__item:last-child::after {
-  content: "";
-}
 .breadcrumb-list__item + .breadcrumb-list__item {
 }
 
@@ -538,7 +541,7 @@ body {
 
 /* CONTACT */
 .contact {
-  padding: 88px 0 80px;
+  padding: 88px 0 20px;
 }
 .contact__heading {
   font-size: 2.2rem;
@@ -628,6 +631,14 @@ body {
   height: 1000px;
   overflow: hidden;
 }
+.footer__bg {
+  background-image: url(./images/bg_footer.png);
+  height: 360px;
+  background-position-x: center;
+}
+.footer__bg.footer__bg--white {
+  background-color: #fff;
+}
 .footer-catch__inner {
   width: 1080px;
   margin: 0 auto;
@@ -667,6 +678,11 @@ body {
   bottom: 11%;
   left: 50%;
   transform: translateX(-50%);
+}
+.footer__inner.footer__inner--under-layer {
+  position: static;
+  transform: translateX(0%);
+  padding: 67px 0 60px;
 }
 .footer__company-name {
   font-size: 2.2rem;
@@ -727,6 +743,7 @@ body {
 .footer__contact-info--mail {
   font-size: 1.8rem;
   padding-left: 28px;
+  cursor: pointer;
 }
 .footer__contact-info--mail::before {
   position: absolute;

@@ -370,11 +370,6 @@ body {
 .breadcrumb-list__item::after {
   content: "〉";
 }
-.breadcrumb-list__item:last-child {
-}
-.breadcrumb-list__item:last-child::after {
-  content: "";
-}
 .breadcrumb-list__item + .breadcrumb-list__item {
 }
 
@@ -437,7 +432,11 @@ body {
 
 /* CONTACT */
 .contact {
-  padding: 88px 0 80px;
+  margin-top: 120px;
+  padding: 88px 0 20px;
+}
+.contact.bg-gray {
+  background-color: #f5f7f8;
 }
 .contact__heading {
   font-size: 2.2rem;
@@ -527,6 +526,15 @@ body {
   height: 1000px;
   overflow: hidden;
 }
+.footer__bg {
+  background-image: url(./images/bg_footer.png);
+  height: 360px;
+  background-position-x: center;
+  background-color: #f5f7f8;
+}
+.footer__bg.footer__bg--white {
+  background-color: #fff;
+}
 .footer-catch__inner {
   width: 1080px;
   margin: 0 auto;
@@ -566,6 +574,11 @@ body {
   bottom: 11%;
   left: 50%;
   transform: translateX(-50%);
+}
+.footer__inner.footer__inner--under-layer {
+  position: static;
+  transform: translateX(0%);
+  padding: 67px 0 60px;
 }
 .footer__company-name {
   font-size: 2.2rem;
@@ -626,6 +639,7 @@ body {
 .footer__contact-info--mail {
   font-size: 1.8rem;
   padding-left: 28px;
+  cursor: pointer;
 }
 .footer__contact-info--mail::before {
   position: absolute;
