@@ -1556,7 +1556,7 @@ body {
 
   /* COMNTACT */
   .contact {
-    padding: 0 0 40px;
+    padding: 40px 0;
   }
   .contact.bg-gray {
     background-color: #f5f7f8;
