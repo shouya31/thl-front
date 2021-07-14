@@ -799,14 +799,14 @@ a:hover {
 }
 .company__text + .company__text {
   /* margin-top: 30px; */
-  padding-left:1em;
-  text-indent:-1em;
+  padding-left: 1em;
+  text-indent: -1em;
 }
 .company__text.company__text--accent {
   color: #10cc00;
 }
 
-.company__text.company__text--accent:first{
+.company__text.company__text--accent:first {
   margin-top: 50px;
 }
 .company__vision {
@@ -931,6 +931,8 @@ a:hover {
 }
 .privacy__text-list-item {
   list-style-type: decimal;
+  padding-left: 1em;
+  text-indent: -1em;
 }
 .privacy__column {
   flex-wrap: nowrap;
