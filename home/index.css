@@ -798,11 +798,16 @@ a:hover {
   line-height: 1.8;
 }
 .company__text + .company__text {
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  padding-left:1em;
+  text-indent:-1em;
 }
 .company__text.company__text--accent {
   color: #10cc00;
-  padding: 10px;
+}
+
+.company__text.company__text--accent:first{
+  margin-top: 50px;
 }
 .company__vision {
   background-color: #f5f7f8;
@@ -812,6 +817,7 @@ a:hover {
   align-items: flex-start;
 }
 .company__vision-textbox {
+  padding-bottom: 50px;
   width: 58%;
 }
 .company__vision-img {
@@ -834,7 +840,7 @@ a:hover {
   border-top: 1px solid #dde4e8;
   font-weight: 500;
 }
-.company__info-table-text{
+.company__info-table-text {
   font-weight: 500;
 }
 .company__info-table-content {
@@ -970,9 +976,8 @@ a:hover {
   max-height: 680px;
   margin: 0px auto;
   position: relative;
-
 }
-.firstview__wrapper--prowork.firstview__wrapper{
+.firstview__wrapper--prowork.firstview__wrapper {
   background-image: url("../images/prowork_firstview.png") !important;
   background-position: center center;
   background-size: cover;
@@ -1127,7 +1132,8 @@ body {
 .header__global-nav-list-item + .header__global-nav-list-item {
   margin-left: 30px;
 }
-.header__global-nav-list-item + .header__global-nav-list-item.header__global-nav-list-item--last {
+.header__global-nav-list-item
+  + .header__global-nav-list-item.header__global-nav-list-item--last {
 }
 .header__global-nav-link {
   font-size: 1.5rem;
