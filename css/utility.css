@@ -13,3 +13,12 @@
 .mt50 {
   margin-top: 50px !important;
 }
+
+.sp-br {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+.sp-br {
+  display: block;
+}
