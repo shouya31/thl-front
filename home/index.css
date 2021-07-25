@@ -63,6 +63,7 @@ a:hover {
   font-size: 1.8rem;
   margin-top: 22px;
   letter-spacing: 0.1em;
+  line-height: 1.6;
   position: relative;
 }
 .catchcopy__md {
@@ -96,7 +97,6 @@ a:hover {
   position: relative;
 }
 .notice-list {
-  border-bottom: 1px solid rgb(221, 228, 232);
   padding: 0px 10px;
 }
 .notice-list__item {
@@ -106,6 +106,9 @@ a:hover {
 .notice-list__item + .notice-list__item {
   border-top: 1px solid rgb(221, 228, 232);
   padding: 20px 0px;
+}
+.notice-list__item:last-child {
+  border-bottom: 1px solid rgb(221, 228, 232);
 }
 .notice-list__data {
   display: flex;
@@ -130,7 +133,7 @@ a:hover {
 }
 .notice-list__text {
   font-size: 1.3rem;
-  width: 502px;
+  max-width: 502px;
   margin-left: 20px;
   line-height: 1.7;
 }
@@ -1161,7 +1164,7 @@ a:hover {
   .first-view {
     height: 80vh;
     max-height: 600px;
-    background-position: 80% center;
+    background-position: 70% center;
   }
   .catchcopy {
     padding: 230px 35px 0 35px;
@@ -1274,10 +1277,19 @@ body {
   padding: 13px 24px;
   border-radius: 20px;
 }
+.header__global-nav-list-item--tel {
+  display: none;
+}
 
 @media screen and (max-width: 1080px) {
   .header__body {
-    width: 1040px;
+    width: 980px;
+  }
+  .header__company-name {
+    padding-left: 20px;
+}
+  .header__global-nav-list-item + .header__global-nav-list-item.header__global-nav-list-item--last .header__global-nav-link {
+    padding: 42px 15px;
   }
 }
 
@@ -1292,19 +1304,28 @@ body {
     text-align: center;
   }
   .header__body {
+    width: 90%;
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+    /* display: none; */
+  }
+  .header__global-nav {
     display: none;
     width: 100%;
-    height: 100vh;
     border-radius: 0;
     background-color: rgba(255,255,255,.9);
     flex-direction: column;
     justify-content: center;
   }
-  .header__company-name {
-    padding-left: 0;
-    margin: 25% auto 50px;
+  .header__company-mainname {
+    font-size: 2.8rem;
+  }
+  .header__company-subname {
+    font-size: 1rem;
   }
   .header__global-nav-list {
+    margin: 60px 0 40px;
     flex-direction: column;
     align-items: center;
   }
@@ -1313,11 +1334,25 @@ body {
     margin-top: 50px;
   }
   .header__global-nav-list-item + .header__global-nav-list-item.header__global-nav-list-item--last .header__global-nav-link {
-  padding: 24px 35px;
+  padding: 18px 35px;
   border-radius: 999px;
 }
+.header__global-nav-list-item--tel {
+  display: initial;
 }
 
+}
+@media screen and (max-width: 960px) {
+  .header__company-name {
+    padding-left: 15px;
+  }
+  .header__company-mainname {
+    font-size: 2.8rem;
+  }
+  .header__company-subname {
+    font-size: 1rem;
+  }
+}
 /* drawer_button */
 
 .zdo_drawer_button {
@@ -1349,7 +1384,6 @@ body {
   padding: 0;
   width: 42px;
   height: 26px;
-  position: relative;
   background: none;
   border: none;
   text-align: center;
@@ -1357,20 +1391,10 @@ body {
   cursor: pointer;
   outline: none;
   position: fixed;
-  right: 4%;
-  top: 0;
+  right: 12%;
+  top: 45px;
+  transform: translate(-50%, -50%);
   z-index: 999;
-  margin-top: 28px;
-}
-
-.zdo_drawer_button::after {
-  content: "";
-  background: #222;
-  height: 74px;
-  width: 74px;
-  border-radius: 35px;
-  position: absolute;
-  transform: translate(-50%, -40%);
 }
 
 
@@ -1440,13 +1464,14 @@ body {
 .zdo_drawer_text {
   width: 100%;
   position: absolute;
-  bottom: -20px;
-  left: 0;
+  top: 50%;
+  left: 70px;
+  transform: translate(-50%, -50%);
   text-align: center;
   font-size: 10px;
   z-index: 999;
   background: none;
-  color: #FFF;
+  color: #222;
 }
 
 .zdo_drawer_close {
@@ -1456,16 +1481,16 @@ body {
 
 /*+++ Default Button Color +++*/
 .zdo_drawer_button {
-  color: #FFF;
+  color: #222;
 }
 
 .zdo_drawer_button .zdo_drawer_bar {
-  background-color: #FFF;
+  background-color: #222;
 }
 }
 @media screen and (max-width: 640px) {
   .zdo_drawer_button {
-    right: 8%;
+    right: 15%;
   }
 }
 /* MAIN */
@@ -1626,6 +1651,7 @@ body {
 @media screen and (max-width: 1080px) {
   .footer__inner {
     max-width: 1040px;
+    width: 90%;
   }
   .footer-catch__text {
     font-size: 6rem;
