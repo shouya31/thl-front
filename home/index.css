@@ -542,6 +542,12 @@ a:hover {
   letter-spacing: 0.05em;
 }
 
+@media screen and (max-width: 640px) {
+  .page-title {
+    font-size: 5rem;
+  }
+}
+
 /* CASES */
 .cases {
   padding: 85px 0 120px;
@@ -843,6 +849,7 @@ a:hover {
   right: 12px;
 }
 .products__card-img {
+  width: 100%;
 }
 .products__card-body {
   letter-spacing: 0.1em;
@@ -885,6 +892,31 @@ a:hover {
 .products__card-pdf-link {
   font-size: 1.2rem;
   text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 960px) {
+  .container {
+    max-width: 90%;
+    margin: auto;
+  }
+  .products__list-wrapper {
+    max-width: 450px;
+    margin: 60px auto;
+  }
+  .products .products__list {
+    grid-template-columns: repeat(1, 450px);
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  .products__list-wrapper {
+    max-width: 90%;
+  }
+  .products .products__list {
+    grid-template-columns: repeat(1, 100%);
+  }
 }
 
 /* company.html */
