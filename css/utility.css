@@ -9,6 +9,15 @@
     display: block;
   }
 }
+.sp-br {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  .sp-br {
+    display: block;
+  }
+}
+
 .mt0 {
   margin-top: 0 !important;
 }
@@ -26,15 +35,6 @@
 }
 .mt50 {
   margin-top: 50px !important;
-}
-
-.sp-br {
-  display: none;
-}
-
-@media screen and (max-width: 640px) {
-.sp-br {
-  display: block;
 }
 .pl0 {
   padding-left: 0 !important;
@@ -54,4 +54,3 @@
 .pl50 {
   padding-left: 50px !important;
 }
-

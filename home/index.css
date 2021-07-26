@@ -241,6 +241,7 @@ a:hover {
   top: -144px;
   left: 220px;
   z-index: -1;
+  overflow: hidden;
 }
 .vision__inner {
   position: relative;
@@ -1443,11 +1444,16 @@ a:hover {
 /* PARTS */
 /* ============================================ */
 
+html {
+  overflow:auto;
+}
+
 /* body */
 body {
   position: relative;
-  overflow-x: clip;
+  overflow-x:hidden;
 }
+
 .top-angle__wrapper {
   overflow: hidden;
 }
@@ -1509,8 +1515,7 @@ body {
   letter-spacing: 0.015em;
   margin-top: 8px;
 }
-.header__global-nav {
-}
+
 .header__global-nav-list {
 }
 .header__global-nav-list-item {
@@ -1545,6 +1550,10 @@ body {
   display: none;
 }
 
+.header__global-nav.sp {
+  display: none;
+}
+
 @media screen and (max-width: 1080px) {
   .header__body {
     width: 980px;
@@ -1574,7 +1583,10 @@ body {
     position: relative;
     /* display: none; */
   }
-  .header__global-nav {
+  .header__global-nav.pc {
+    display: none;
+  }
+  .header__global-nav.sp {
     display: none;
     width: 100%;
     border-radius: 0;
