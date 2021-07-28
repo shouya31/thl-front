@@ -423,6 +423,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   width: 320px;
+  min-height: 110px;
   text-align: center;
   background-color: #222;
   padding: 18px 58px;
@@ -543,8 +544,12 @@ a:hover {
 }
 
 @media screen and (max-width: 640px) {
+  .page-info-block .container {
+    flex-direction: column;
+  }
   .page-title {
-    font-size: 5rem;
+    margin-top: 10px;
+    font-size: 2rem;
   }
 }
 
@@ -917,6 +922,10 @@ a:hover {
   .products .products__list {
     grid-template-columns: repeat(1, 100%);
   }
+  .products__card-pdf-textbox {
+  flex-wrap: wrap;
+  line-height: 1.4;
+}
 }
 
 /* company.html */
@@ -1500,7 +1509,20 @@ body {
   z-index: -1;
   overflow: hidden;
 }
-
+@media screen and (max-width: 960px) {
+  .top-angle {
+    width: 1400px;
+    height: 600px;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 640px) {
+  .top-angle {
+    width: 800px;
+    height: 400px;
+    background-size: cover;
+  }
+}
 /* HEADER */
 .header {
   position: absolute;
@@ -1592,7 +1614,7 @@ body {
   }
   .header__company-name {
     padding-left: 20px;
-}
+  }
   .header__global-nav-list-item + .header__global-nav-list-item.header__global-nav-list-item--last .header__global-nav-link {
     padding: 42px 15px;
   }
@@ -1807,7 +1829,11 @@ body {
 .main.main--under-layer {
   padding-top: 200px;
 }
-
+@media screen and (max-width: 640px) {
+  .main.main--under-layer {
+    padding-top: 160px;
+  }
+}
 /* FOOTER */
 .footer {
   letter-spacing: 0.1em;
