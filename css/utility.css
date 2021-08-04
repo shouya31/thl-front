@@ -9,6 +9,15 @@
     display: block;
   }
 }
+.sp-br {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  .sp-br {
+    display: block;
+  }
+}
+
 .mt0 {
   margin-top: 0 !important;
 }

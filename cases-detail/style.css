@@ -121,6 +121,9 @@ a:hover {
   width: 360px;
   position: relative;
 }
+.beforeafter p {
+  font-size: 1.2rem;
+}
 .beforeafter img {
   width: 100%;
   margin-bottom: 10px;
@@ -179,6 +182,7 @@ dl,dt,dd {
   letter-spacing: 1.5px;
   line-height: 1.6;
   font-weight: 500;
+  word-break: keep-all;
 }
 .data__table a {
   color: #10cc00;
@@ -357,17 +361,69 @@ margin: auto;
   letter-spacing: 0.1em;
   margin-top: 8px;
 }
+@media screen and (max-width: 960px) {
+  .cases-detail {
+    max-width: 95%;
+  }
+  .cases-detail___content-title {
+    margin-bottom: 28px;
+  }
+  .cases-detail___other-cases__inner .cases-list {
+    grid-template-columns: repeat(1 , 470px);
+  }
+  .cases-detail___other-cases__inner .cases-list-page {
+    width: 470px;
+    margin: 10px auto 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  .cases-detail___content {
+    margin-bottom: 60px;
+  }
+
+  .beforeafter {
+    margin-bottom: 20px;
+  }
+  .balloon_sp.before.value p{
+    padding: 30px 0;
+  }
+  .balloon_sp.after.value p{
+    padding: 0 0 60px 0;
+  }
+  .balloon {
+    right: 0;
+    top: 70%;
+  }
+  .balloon:before {
+  border-width: 0 4px 6px 4px;
+  border-color: transparent transparent #11cc00 transparent;
+  left: 50%;
+  top: -2px;
+}
+  .cases-detail___other-cases__inner .cases-list {
+    grid-template-columns: repeat(1 , 95%);
+  }
+  .cases-detail___other-cases__inner .cases-list-page {
+    width: 95%;
+    margin: 10px auto 0;
+  }
+}
+
 
 
 /* PARTS */
 /* ============================================ */
 
+
+html {
+  overflow:auto;
+}
 /* body */
 body {
   position: relative;
-  /* overflow-x: clip; */
-  overflow-x: hidden;
+  overflow-x:hidden;
 }
+
 .top-angle__wrapper {
   overflow: hidden;
 }
@@ -382,8 +438,21 @@ body {
   z-index: -1;
   overflow: hidden;
 }
-
-/* header */
+@media screen and (max-width: 960px) {
+  .top-angle {
+    width: 1400px;
+    height: 600px;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 640px) {
+  .top-angle {
+    width: 800px;
+    height: 400px;
+    background-size: cover;
+  }
+}
+/* HEADER */
 .header {
   position: absolute;
   top: 20px;
@@ -429,8 +498,7 @@ body {
   letter-spacing: 0.015em;
   margin-top: 8px;
 }
-.header__global-nav {
-}
+
 .header__global-nav-list {
 }
 .header__global-nav-list-item {
@@ -438,7 +506,8 @@ body {
 .header__global-nav-list-item + .header__global-nav-list-item {
   margin-left: 30px;
 }
-.header__global-nav-list-item + .header__global-nav-list-item.header__global-nav-list-item--last {
+.header__global-nav-list-item
+  + .header__global-nav-list-item.header__global-nav-list-item--last {
 }
 .header__global-nav-link {
   font-size: 1.5rem;
@@ -459,6 +528,89 @@ body {
   .header__global-nav-link {
   padding: 13px 24px;
   border-radius: 20px;
+}
+.header__global-nav-list-item--tel {
+  display: none;
+}
+
+.header__global-nav.sp {
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .header__body {
+    width: 980px;
+  }
+  .header__company-name {
+    padding-left: 20px;
+  }
+  .header__global-nav-list-item + .header__global-nav-list-item.header__global-nav-list-item--last .header__global-nav-link {
+    padding: 42px 15px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    position: fixed;
+    transform: translateX(0);
+    top: initial;
+    left: initial;
+    right: initial;
+    width: 100%;
+    text-align: center;
+  }
+  .header__body {
+    width: 90%;
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+    /* display: none; */
+  }
+  .header__global-nav.pc {
+    display: none;
+  }
+  .header__global-nav.sp {
+    display: none;
+    width: 100%;
+    border-radius: 0;
+    background-color: rgba(255,255,255,.9);
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header__company-mainname {
+    font-size: 2.8rem;
+  }
+  .header__company-subname {
+    font-size: 1rem;
+  }
+  .header__global-nav-list {
+    margin: 60px 0 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__global-nav-list-item + .header__global-nav-list-item {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .header__global-nav-list-item + .header__global-nav-list-item.header__global-nav-list-item--last .header__global-nav-link {
+  padding: 18px 35px;
+  border-radius: 999px;
+}
+.header__global-nav-list-item--tel {
+  display: initial;
+}
+
+}
+@media screen and (max-width: 960px) {
+  .header__company-name {
+    padding-left: 15px;
+  }
+  .header__company-mainname {
+    font-size: 2.8rem;
+  }
+  .header__company-subname {
+    font-size: 1rem;
+  }
 }
 
 /* MAIN */
